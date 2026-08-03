@@ -1,0 +1,437 @@
+[
+    {
+        "id": "2397660807b5116c",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "ESP32 List",
+        "style": {
+            "label": true,
+            "fill": "#ffff00"
+        },
+        "nodes": [
+            "7b1bd4699a9aa4c2",
+            "c22d32312e50a1cf",
+            "61fdeb58d0958ef2",
+            "bcdcadc3ca765f51",
+            "04a0c9962ff2f273",
+            "9d4a2dab5409fb06",
+            "683d115a2c3c349d",
+            "7fb2b946bb696b94",
+            "b7f43571e199c3ec",
+            "78dd49e92ece6fa5",
+            "a0bc907dbc395fae",
+            "201dda5bd722e33d",
+            "56963e62ea35e21e",
+            "f432a46f7247f47d",
+            "f57795686e7d9b3a"
+        ],
+        "x": 94,
+        "y": 579,
+        "w": 982,
+        "h": 202
+    },
+    {
+        "id": "7b1bd4699a9aa4c2",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Config KMS List",
+        "links": [
+            "04a0c9962ff2f273",
+            "4dc8c4eea519145c"
+        ],
+        "x": 135,
+        "y": 620,
+        "wires": [
+            [
+                "f57795686e7d9b3a"
+            ]
+        ]
+    },
+    {
+        "id": "c22d32312e50a1cf",
+        "type": "switch",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Add, Edit , Delete or Enabled",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "add_esp32",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "edit_esp32",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "delete_esp32",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "enabled_esp_config",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "reload_esp32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 520,
+        "y": 680,
+        "wires": [
+            [
+                "78dd49e92ece6fa5"
+            ],
+            [
+                "61fdeb58d0958ef2"
+            ],
+            [
+                "201dda5bd722e33d"
+            ],
+            [
+                "56963e62ea35e21e"
+            ],
+            [
+                "04a0c9962ff2f273"
+            ]
+        ]
+    },
+    {
+        "id": "61fdeb58d0958ef2",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Set id",
+        "func": "msg.query = {\n    \"_id\": \"init\",\n    \"ESP32.devices._id\": msg.payload._id\n}\n\nmsg.payload = {\n    $set: {\n        \"ESP32.devices.$.device\": msg.payload.device,\n        \"ESP32.devices.$.number_input\": msg.payload.number_input,\n        \"ESP32.devices.$.number_output\": msg.payload.number_output,\n        \"ESP32.devices.$.number_rfid\": msg.payload.number_rfid,\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 660,
+        "wires": [
+            [
+                "bcdcadc3ca765f51",
+                "04a0c9962ff2f273"
+            ]
+        ]
+    },
+    {
+        "id": "bcdcadc3ca765f51",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "mongodb": "757e29753346cf86",
+        "name": "Update Esp32",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 900,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "04a0c9962ff2f273",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "KMS List Valid Action",
+        "mode": "link",
+        "links": [
+            "7b1bd4699a9aa4c2"
+        ],
+        "x": 1035,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9d4a2dab5409fb06",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "tab": "7d7fae418ec6ebd9",
+        "name": "Esp32s List Table",
+        "order": 4,
+        "width": 12,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center;\">Liste des ESP</h3>\n\n<div style=\"display: block; text-align: center;\">\n    <label for=\"esp_enabled\" style=\"font-size : 1rem; font-weight: bold; text-decoration: underline; margin-right: 10%;\">ACTIVER</label>\n    <label class=\"switch\">\n        <input type=\"checkbox\" id=\"esp_enabled\" onchange=\"enableESP()\">\n        <span class=\"slider round\"></span>\n    </label>\n</div>\n\n<table id=\"esp32s_list\">\n    <tbody>\n        <tr>\n            <th class=\"center\" style=\"width:5%\">#</th>\n            <th class=\"center\" style=\"width:35%\">Identifiant du module</th>\n            <th class=\"center\" style=\"width:20%\">Nombre d'entrées</th>\n            <th class=\"center\" style=\"width:20%\">Nombre de sorties</th>\n            <th class=\"center\" style=\"width:20%\">Nombre de RFID</th>\n            <th class=\"center\" style=\"width:20%\">Actions</th>\n        </tr>\n    </tbody>\n</table>\n\n<!-- The Modal -->\n<div id=\"esp32s_list_modal\" class=\"modal\">\n    <!-- Modal content -->\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h2 id=\"esp32s_list_modal_title\" style=\"margin: auto;\"></h2>\n        </div>\n        <div class=\"modal-body\">\n            <p id=\"esp32s_list_modal_info\"></p>\n            <p>Voulez-vous continuer ?</p>\n        </div>\n        <div class=\"modal-footer\">\n            <div class=\"d-grid gap-2 col-12 mx-auto\">\n                <button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"esp32sListModalValidate()\">Valider</button>\n                <button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"esp32sListModalCancelled()\">Annuler</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n    //GLOBALS VARIABLES\n\n    //GLOBALS FUNCTIONS\n\n    //CREATE TABLE\n    $node.on(\"update-value\", function(evt, data) {\n        var table = document.getElementById('esp32s_list');\n        var enabled = data.msg.payload[0].ESP32.esp_enabled;\n        $('#esp_enabled').prop(\"checked\", enabled);\n        $('#esp_enabled').prop(\"disabled\", false);\n        var index = 0;\n        //clear table\n        clearEsp32sList();\n\n        //load datas\n        if (data.msg.topic === \"load_esp32s_list\") {\n            dat = data.msg.payload[0].ESP32.devices;\n            if (dat !== undefined) {\n                dat.forEach(function(obj) {\n                    index++;\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('name', 'esp32'); //to delete the data on load\n                    tr.setAttribute('id', obj._id); //to reorder the table\n                    tr.innerHTML =\n                        '<td name=\"number\" class=\"center\">' + index + '</td>' +\n                        '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" value=\"' + obj.device + '\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_input\" class=\"fullDiv center\" value=\"' + obj.number_input + '\" autocomplete=\"off\" placeholder=\"Nombre d\\'entrées\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_output\" class=\"fullDiv center\" value=\"' + obj.number_output + '\" autocomplete=\"off\" placeholder=\"Nombre de sorties\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_rfid\" class=\"fullDiv center\" value=\"' + obj.number_rfid + '\" autocomplete=\"off\" placeholder=\"Nombre de RFID\"></input></td>' +\n                        '<td class=\"center\">' +\n                        '<button class=\"btn btn-warning\" onclick=\"editEsp32(this, \\'' + obj._id + '\\')\"><i class=\"fa fa-pencil\"></i></button>' +\n                        '<button class=\"btn btn-danger\" onclick=\"deleteEsp32(this, \\'' + obj._id + '\\')\"><i class=\"fa fa-trash\"></i></button>' +\n                        '</td>';\n                    table.appendChild(tr);\n                });\n            }\n        }\n\n        //create last row\n        var tr = document.createElement('tr');\n        tr.setAttribute('name', 'esp32'); //to delete the data on load\n        tr.setAttribute('id', \"newAction\"); //to reorder the table\n        tr.innerHTML =\n            '<td name=\"number\" class=\"center\">' + (index+1) + '</td>' +\n            '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n            '<td class=\"center\"><input name=\"number_input\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre d\\'entrées\"></input></td>' +\n            '<td class=\"center\"><input name=\"number_output\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre de sorties\"></input></td>' +\n            '<td class=\"center\"><input name=\"number_rfid\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre de RFID\"></input></td>' +\n            '<td class=\"center\">' +\n            '<button class=\"btn btn-warning\" onclick=\"addEsp32(this)\"><i class=\"fa fa-save\"></i></button>' +\n            '<button class=\"btn btn-danger\" onclick=\"cancelAddEsp32()\"><i class=\"fa fa-refresh\"></i></button>' +\n            '</td>';\n        table.appendChild(tr);\n    });\n\n    //CLEAR ALL LINES OF THE TABLE\n    function clearEsp32sList() {\n        var esp32s = document.querySelectorAll('[name = \"esp32\"]');\n        esp32s.forEach(esp32 => {\n            esp32.remove();\n        });\n    }\n\n    //ENABLE ESP\n    function enableESP() {\n        var enabled = $('#esp_enabled').is(\":checked\");\n        var msg = {\n            \"topic\": \"enabled_esp_config\",\n            \"payload\": {\n                \"enabled\": enabled\n            }\n        }\n        $node.trigger('send', msg);\n    }\n\n    //ADD FUNCTION\n    function addEsp32(data) {\n        var row = data.closest(\"tr\"); // Find the row\n        var device = $(row).find('[name=\"device\"]').val();\n        var number_input = $(row).find('[name=\"number_input\"]').val();\n        var number_output = $(row).find('[name=\"number_output\"]').val();\n        var number_rfid = $(row).find('[name=\"number_rfid\"]').val();\n        var msg = {\n            \"topic\": \"add_esp32\",\n            \"payload\": {\n                \"device\": device,\n                \"number_input\": number_input,\n                \"number_output\": number_output,\n                \"number_rfid\": number_rfid,\n            }\n        }\n        $node.trigger('send', msg)\n    }\n\n    //EDIT FUNCTION\n    function editEsp32(data, id) {\n        var row = data.closest(\"tr\"); // Find the row\n        var device = $(row).find('[name=\"device\"]').val();\n        var number_input = $(row).find('[name=\"number_input\"]').val();\n        var number_output = $(row).find('[name=\"number_output\"]').val();\n        var number_rfid = $(row).find('[name=\"number_rfid\"]').val();\n        var msg = {\n            \"topic\": \"edit_esp32\",\n            \"payload\": {\n                \"_id\": id,\n                \"device\": device,\n                \"number_input\": number_input,\n                \"number_output\": number_output,\n                \"number_rfid\": number_rfid,\n            }\n        }\n        $node.trigger('send', msg);\n    }\n\n    //CANCEL ADD\n    function cancelAddEsp32(data) {\n        var msg = {\n            \"topic\": \"reload_esp32\",\n            \"payload\": {\n            }\n        }\n        $node.trigger('send', msg);\n    }\n\n    //DELETE FUNCTION\n    function deleteEsp32(data, id) {\n        var row = data.closest(\"tr\"); // Find the row\n        var device = $(row).find('[name=\"device\"]').val();\n        esp32s_list_modal.style.display = \"block\";\n        document.getElementById('esp32s_list_modal_title').innerHTML = \"MISE EN GARDE\";\n        document.getElementById('esp32s_list_modal_info').innerHTML = \"Cette action est irréversible. L'ESP sera définitivement supprimée...\";\n        messageEsp32s = {\n            \"topic\": \"delete_esp32\",\n            \"payload\": {\n                \"_id\" : id,\n                \"device\": device,\n            }\n        }\n    }\n\n    // Set variable to record msg.payload\n    var messageEsp32s;\n\n    // Get the modal\n    var esp32s_list_modal = document.getElementById('esp32s_list_modal');\n        \n    function esp32sListModalValidate() {\n        $node.trigger('send', messageEsp32s);\n        esp32s_list_modal.style.display = \"none\";\n    }\n\n    function esp32sListModalCancelled() {\n        esp32s_list_modal.style.display = \"none\";\n    }\n\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "c22d32312e50a1cf"
+            ]
+        ]
+    },
+    {
+        "id": "683d115a2c3c349d",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "mongodb": "757e29753346cf86",
+        "name": "Save Esp32",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 890,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7fb2b946bb696b94",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Get Esp32s List",
+        "func": "/*msg.payload = ([\n    { $match: { \"_id\": \"init\" } },\n    { $unwind: \"$KMS868\" },\n])*/\n\nmsg.payload = ([\n    { $match: { \"_id\": \"init\" } },\n    {\n        $project: {\n            //\"KMS868\": 1,\n            \"ESP32\": 1,\n            \"_id\": 0\n        }\n    },\n])\n\nmsg.topic = \"load_esp32s_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "b7f43571e199c3ec"
+            ]
+        ]
+    },
+    {
+        "id": "b7f43571e199c3ec",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Esp32",
+        "collection": "config_automation",
+        "operation": "aggregate",
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "9d4a2dab5409fb06"
+            ]
+        ]
+    },
+    {
+        "id": "78dd49e92ece6fa5",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Set id",
+        "func": "msg.query = { \"_id\": \"init\" }\n\nmsg.payload = {\n    $push: {\n        \"ESP32.devices\": {\n            \"_id\": msg._msgid,\n            \"device\": msg.payload.device,\n            \"number_input\": msg.payload.number_input,\n            \"number_output\": msg.payload.number_output,\n            \"number_rfid\": msg.payload.number_rfid,\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 620,
+        "wires": [
+            [
+                "683d115a2c3c349d",
+                "04a0c9962ff2f273"
+            ]
+        ]
+    },
+    {
+        "id": "a0bc907dbc395fae",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "mongodb": "757e29753346cf86",
+        "name": "Delete Esp32",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 900,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "201dda5bd722e33d",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Set id",
+        "func": "global.set(\"Memory.ESP32.\" + msg.payload.device, undefined);\n\nmsg.query = {\n    \"_id\": \"init\"\n}\n\nmsg.payload = {\n    $pull: {\n        \"ESP32.devices\": {\n            \"_id\": msg.payload._id\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 700,
+        "wires": [
+            [
+                "a0bc907dbc395fae",
+                "04a0c9962ff2f273"
+            ]
+        ]
+    },
+    {
+        "id": "56963e62ea35e21e",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Set id",
+        "func": "msg.query = {\n    \"_id\": \"init\"\n}\n\nmsg.payload = {\n    $set: {\n        \"ESP32.esp_enabled\": msg.payload.enabled\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "f432a46f7247f47d"
+            ]
+        ]
+    },
+    {
+        "id": "f432a46f7247f47d",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "mongodb": "757e29753346cf86",
+        "name": "Enabled Esp32",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 900,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f57795686e7d9b3a",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 620,
+        "wires": [
+            [
+                "7fb2b946bb696b94"
+            ]
+        ]
+    },
+    {
+        "id": "757e29753346cf86",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "unified-red",
+        "name": ""
+    },
+    {
+        "id": "7d7fae418ec6ebd9",
+        "type": "ur_tab",
+        "name": "Adresses",
+        "order": 1,
+        "group": "0714dc6dd99c1e82",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "0714dc6dd99c1e82",
+        "type": "ur_group",
+        "name": "ESP32",
+        "page": "97f1ff9eceaff397",
+        "order": 4,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "97f1ff9eceaff397",
+        "type": "ur_page",
+        "name": "Automates",
+        "folder": "b8ad24c00d63b306",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide",
+        "isMulti": false,
+        "isSingle": true,
+        "pageType": "single",
+        "inheritInst": false,
+        "expression": ""
+    },
+    {
+        "id": "b8ad24c00d63b306",
+        "type": "ur_folder",
+        "name": "MASTER INSTALL",
+        "icon": "settings",
+        "order": 4,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "c4a2c0ff90fa983b",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-mongodb": "0.2.5",
+            "unified-red": "2.7.2"
+        }
+    }
+]
