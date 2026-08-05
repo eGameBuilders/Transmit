@@ -1,0 +1,448 @@
+[
+    {
+        "id": "0ea444d24736682e",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "Triggers List",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c101f552cd266fac",
+            "34c9bb47d0172539",
+            "c4832a9baa086b6c",
+            "478edb9d567bfa53",
+            "35e26feb54ad04b2",
+            "b5f0aff7a2136440",
+            "4511c3508b1e966e",
+            "d957b0e23c14926b",
+            "7f043c7c408613bb",
+            "c1fb495e58a75ce8",
+            "227d92bc792e05e3",
+            "abbb2e4afe32cdd3",
+            "0689930339b7e921",
+            "e8e4d39f41269e69",
+            "22cc6791e427b897",
+            "a21d62828f46650c"
+        ],
+        "x": 94,
+        "y": 1099,
+        "w": 1202,
+        "h": 222
+    },
+    {
+        "id": "c101f552cd266fac",
+        "type": "switch",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Add, Edit, Reload or Delete",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "add_trigger",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "edit_trigger",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "delete_trigger",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "reload_triggers_list",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            [
+                "478edb9d567bfa53"
+            ],
+            [
+                "b5f0aff7a2136440"
+            ],
+            [
+                "d957b0e23c14926b"
+            ],
+            [
+                "c4832a9baa086b6c"
+            ]
+        ]
+    },
+    {
+        "id": "34c9bb47d0172539",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "mongodb": "757e29753346cf86",
+        "name": "Update Trigger",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 1120,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "c4832a9baa086b6c",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Triggers List Valid Action",
+        "mode": "link",
+        "links": [
+            "4511c3508b1e966e",
+            "820362682b9f120b"
+        ],
+        "x": 1255,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "478edb9d567bfa53",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Set trigger_id",
+        "func": "msg.query = { \"_id\": \"init\" }\n\nmsg.payload._id = msg._msgid;\n\nmsg.payload = {\n    $push: {\n        \"inputs\": {\n            \"_id\": msg.payload._id,\n            \"name\": msg.payload.name,\n            \"room\": msg.payload.room,\n            \"type\": msg.payload.type,\n            \"system\": msg.payload.system,\n            \"device\": msg.payload.device,\n            \"entry\": msg.payload.entry,\n        }\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1200,
+        "wires": [
+            [
+                "35e26feb54ad04b2",
+                "c4832a9baa086b6c"
+            ]
+        ]
+    },
+    {
+        "id": "35e26feb54ad04b2",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "mongodb": "757e29753346cf86",
+        "name": "Save Trigger",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 1110,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "b5f0aff7a2136440",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Find trigger_id",
+        "func": "msg.query = {\n    \"_id\": \"init\",\n    \"inputs._id\": msg.payload._id\n}\n\n\n\nmsg.payload = {\n    $set: {\n        \"inputs.$\": {\n            \"_id\": msg.payload._id,\n            \"name\": msg.payload.name,\n            \"room\": msg.payload.room,\n            \"type\": msg.payload.type,\n            \"system\": msg.payload.system,\n            \"device\": msg.payload.device,\n            \"entry\": msg.payload.entry,\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1240,
+        "wires": [
+            [
+                "34c9bb47d0172539",
+                "c4832a9baa086b6c"
+            ]
+        ]
+    },
+    {
+        "id": "4511c3508b1e966e",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Config Triggers Details",
+        "links": [
+            "268b981570b46c15",
+            "c4832a9baa086b6c"
+        ],
+        "x": 135,
+        "y": 1140,
+        "wires": [
+            [
+                "e8e4d39f41269e69"
+            ]
+        ]
+    },
+    {
+        "id": "d957b0e23c14926b",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Delete",
+        "func": "msg.query = {\n    \"_id\": \"init\"\n}\n\nmsg.payload = {\n    $pull: {\n        \"inputs\": { \"_id\": msg.payload._id }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1280,
+        "wires": [
+            [
+                "7f043c7c408613bb",
+                "c4832a9baa086b6c"
+            ]
+        ]
+    },
+    {
+        "id": "7f043c7c408613bb",
+        "type": "mongodb out",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "mongodb": "757e29753346cf86",
+        "name": "Delete Trigger",
+        "collection": "config_automation",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "update",
+        "x": 1120,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "c1fb495e58a75ce8",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Get MCP datas",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } }\n])\n\nmsg.topic = \"load_triggers_list\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1180,
+        "wires": [
+            [
+                "227d92bc792e05e3"
+            ]
+        ]
+    },
+    {
+        "id": "227d92bc792e05e3",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "mongodb": "757e29753346cf86",
+        "name": "Load Automates Datas",
+        "collection": "config_automation",
+        "operation": "aggregate",
+        "x": 510,
+        "y": 1180,
+        "wires": [
+            [
+                "0689930339b7e921"
+            ]
+        ]
+    },
+    {
+        "id": "abbb2e4afe32cdd3",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "tab": "716f2cb0ce20cd75",
+        "name": "Triggers List Table",
+        "order": 2,
+        "width": "12",
+        "height": 0,
+        "format": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n<table id=\"triggers_list\">\n    <tbody>\n        <tr>\n            <th id=\"trigger\" class=\"center\" style=\"width:20%\">Nom</th>\n            <th id=\"room\" class=\"center\" style=\"width:10%\">Pièce</th>\n            <th id=\"type\" class=\"center\" style=\"width:10%\">Type</th>\n            <th id=\"system\" class=\"center\" style=\"width:10%\">Système</th>\n            <th id=\"device\" class=\"center\" style=\"width:15%\">Device</th>\n            <th id=\"entry\" class=\"center\" style=\"width:15%\">Entrée</th>\n            <th class=\"center\" style=\"width:20%\">Actions</th>\n        </tr>\n    </tbody>\n</table>\n\n<!-- The Modal -->\n<div id=\"triggers_list_modal\" class=\"modal\">\n    <!-- Modal content -->\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h2 id=\"triggers_list_modal_title\" style=\"margin: auto;\"></h2>\n        </div>\n        <div class=\"modal-body\">\n            <p id=\"triggers_list_modal_info\"></p>\n            <p>Voulez-vous continuer ?</p>\n        </div>\n        <div class=\"modal-footer\">\n            <div class=\"d-grid gap-2 col-12 mx-auto\">\n                <button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"triggersListModalValidate()\">Valider</button>\n                <button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"triggersListModalCancelled()\">Annuler</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n    //GLOBALS VARIABLES\n    var MCP23017_datas;\n    var KMS868_datas;\n    var ESP32_datas;\n    var option_Selected;\n\n    //GLOBALS FUNCTIONS\n\n    //CREATE TABLE\n    $node.on(\"update-value\", function(evt, data) {\n        var dat = data.msg.payload;\n        //clear table\n        clearTriggersList();\n        //table\n        var table = document.getElementById('triggers_list');\n        //load datas\n        if (data.msg.topic === \"load_triggers_list\") {\n\n            //input options \"rooms\"\n            var rooms_list = data.msg.rooms_list\n            var rooms = '<select class=\"fullDiv center\" name=\"room\">';\n            rooms += '<option selected disabled>Choisir...</option>';\n            $.each(rooms_list, function(key, value){\n                rooms += '<option value=\"' + value.rooms_list._id + '\">' + value.rooms_list.name + '</option>';\n            });\n            rooms += '<option value=\"deleteme\">SUPPRIMER</option>';\n            rooms += '</select>';\n\n            //input options \"types\"\n            var types = '<select class=\"fullDiv center\" name=\"type\">';\n            types += '<option selected disabled>Choisir...</option>';\n            types += '<option>Visible</option>';\n            types += '<option>Non Visible</option>';\n            types += '</select>';\n\n            //input options \"systems\"\n            var systems = '<select class=\"fullDiv center\" name=\"system\">';\n            systems += '<option selected disabled>Choisir...</option>';\n            if (data.msg.mcp23017_inputs_list.length !== 0) {\n                MCP23017_datas = data.msg.mcp23017_inputs_list;\n                systems += '<option value=\"MCP\">MCP</option>';\n            }\n            if (data.msg.kms868_inputs_list.length !== 0) {\n                KMS868_datas = data.msg.kms868_inputs_list;\n                systems += '<option value=\"KMS\">KMS</option>';\n            }\n            if (data.msg.esp32_inputs_list.length !== 0) {\n                ESP32_datas = data.msg.esp32_inputs_list;\n                systems += '<option value=\"ESP\">ESP</option>';\n            }\n            systems += '</select>';\n\n            //input options \"devices\"\n            var devices = '<select class=\"fullDiv center\" name=\"device\" style=\"display:none;\"\">';\n            devices += '</select>';\n\n            //input options \"entries\"\n            var entries = '<select class=\"fullDiv center\" name=\"entry\" style=\"display:none;\"\">';\n            entries += '</select>';\n\n            if(dat.length !== 0) {\n                dat.forEach(function(obj) {\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('name', 'trigger'); //to delete the data on load\n                    tr.innerHTML =\n                        '<td class=\"center\"><input class=\"fullDiv center\" name=\"name\" autocomplete=\"off\" placeholder=\"Entrer un nom\">' + name + '</input></td>' +\n                        '<td class=\"center\" onchange=\"deleteRoomIn(this)\">' + rooms + '</td>' +\n                        '<td class=\"center\">' + types + '</td>' +\n                        '<td class=\"center\" onchange=\"beforeLoadTriggerDevices(this)\">' + systems + '</td>' +\n                        '<td class=\"center\" onchange=\"beforeLoadTriggerEntries(this)\">' + devices + '</td>' +\n                        '<td class=\"center\">' + entries + '</td>' +\n                        '<td class=\"center\">' +\n                        '<button class=\"btn btn-warning\" onclick=\"editTrigger(this, \\'' + obj._id + '\\')\"><i class=\"fa fa-pencil\"></i></button>' +\n                        '<button class=\"btn btn-danger\" onclick=\"deleteTrigger(\\'' + obj._id + '\\')\"><i class=\"fa fa-trash\"></i></button>' +\n                        '<button class=\"btn btn-danger\" onclick=\"cancelAddTrigger()\"><i class=\"fa fa-refresh\"></i></button>' +\n                        '</td>';\n                    \n                    table.appendChild(tr);\n                    \n                    var sel = table.rows[table.rows.length-1];\n                    $(sel).find('[name=\"name\"]').val(obj.name);\n                    $(sel).find('[name=\"room\"]').val(obj.room);\n                    $(sel).find('[name=\"type\"]').val(obj.type);\n                    $(sel).find('[name=\"system\"]').val(obj.system);\n                    loadTriggerDevices(sel);\n                    $(sel).find('[name=\"device\"]').val(obj.device);\n                    //$(sel).find('[name=\"entry\"]').val(obj.entry);\n                    loadTriggerEntries(sel, obj.entry);\n                    $(sel).find('[name=\"entry\"]').val(obj.entry);\n                });\n            }\n\n            //create last row\n            var tr = document.createElement('tr');\n            tr.setAttribute('name', 'trigger'); //to delete the data on load\n            tr.innerHTML =\n                '<td class=\"center\"><input class=\"fullDiv center\" name=\"name\" autocomplete=\"off\" placeholder=\"Entrer un nom\"></input></td>' +\n                '<td class=\"center\" onchange=\"deleteRoomIn(this)\">' + rooms + '</td>' +\n                '<td class=\"center\">' + types + '</td>' +\n                '<td class=\"center\" onchange=\"beforeLoadTriggerDevices(this)\">' + systems + '</td>' +\n                '<td class=\"center\" onchange=\"beforeLoadTriggerEntries(this)\">' + devices + '</td>' +\n                '<td class=\"center\">' + entries + '</td>' +\n                '<td class=\"center\">' +\n                '<button class=\"btn btn-warning\" onclick=\"addTrigger(this)\"><i class=\"fa fa-check\"></i></button>' +\n                '<button class=\"btn btn-danger\" onclick=\"cancelAddTrigger()\"><i class=\"fa fa-refresh\"></i></button>' +\n                '</td>';\n            \n            table.appendChild(tr);\n        }\n    });\n\n    //Delete Room\n    function deleteRoomIn(data) {\n        var row = data.closest(\"tr\"); // Find the row\n        var room = $(row).find('[name=\"room\"]').val(); //Find the system value\n        if (room === \"deleteme\") {\n            $(row).find('[name=\"room\"]').val(\"Choisir...\");\n        }\n    }\n\n    //Function before load device options\n    function beforeLoadTriggerDevices(data) {\n        var row = data.closest(\"tr\"); // Find the row\n        loadTriggerDevices(row);\n    }\n\n    //Function to load device options\n    function loadTriggerDevices(row) {\n        var system = $(row).find('[name=\"system\"]').val(); //Find the system value\n\n        if (system === \"MCP\") {\n            option_Selected = MCP23017_datas;\n        }\n        else if (system === \"KMS\") {\n            option_Selected = KMS868_datas;\n        }\n        else if (system === \"ESP\") {\n            option_Selected = ESP32_datas;\n        }\n        \n        $(row).find('[name=\"device\"]')\n            .find('option')\n            .remove()\n            .end()\n        $.each(option_Selected, function(id, dev) {\n            $(row).find('[name=\"device\"]')\n                .append(\n                $(\"<option></option>\")\n                    .attr(\"value\", dev.device)\n                    .text(dev.name)\n                )\n        });\n        $(row).find('[name=\"device\"]')\n            .prepend('<option selected disabled>Choisir...</option>')\n        $(row).find('[name=\"device\"]').show();\n    }\n\n    //Function before load entry options\n    function beforeLoadTriggerEntries(data) {\n        var row = data.closest(\"tr\"); // Find the row\n        loadTriggerEntries(row, null);\n        \n    }\n\n    //Function to load entry options\n    function loadTriggerEntries(row, data) {\n        var device = $(row).find('[name=\"device\"]').val(); //Find the device value\n        \n        $(row).find('[name=\"entry\"]')\n            .find('option')\n            .remove()\n            .end()\n        $.each(option_Selected, function(id, dev) {\n            if (device === dev.device) {\n                var entries = dev.entry;\n                $.each(entries, function(id, entry) {\n                    if (entry.disabled && entry.value === data) {\n                        $(row).find('[name=\"entry\"]')\n                        .append(\n                        $(\"<option></option>\")\n                            .attr(\"value\", entry.value)\n                            .text(entry.name)\n                        )\n                    }\n                    else if (!entry.disabled) {\n                        $(row).find('[name=\"entry\"]')\n                        .append(\n                        $(\"<option></option>\")\n                            .attr(\"value\", entry.value)\n                            .text(entry.name)\n                        )\n                    }\n                    else {\n                        $(row).find('[name=\"entry\"]')\n                        .append(\n                        $(\"<option disabled></option>\")\n                            .attr(\"value\", entry.value)\n                            .text(entry.name)\n                        )\n                    }\n                });\n            }\n        });\n        $(row).find('[name=\"entry\"]')\n            .prepend('<option selected disabled>Choisir...</option>')\n        $(row).find('[name=\"entry\"]').show();\n    }\n\n\n    //CLEAR ALL LINES OF THE TABLE\n    function clearTriggersList() {\n        var triggers = document.querySelectorAll('[name = \"trigger\"]');\n        triggers.forEach(trigger => {\n            trigger.remove();\n        });\n    }\n\n    //ADD FUNCTION\n    function addTrigger(data) {\n        var row = data.closest(\"tr\"); // Find the row\n        var name = $(row).find('[name=\"name\"]').val();\n        var room = $(row).find('[name=\"room\"]').val();\n        var type = $(row).find('[name=\"type\"]').val();\n        var system = $(row).find('[name=\"system\"]').val();\n        var device = $(row).find('[name=\"device\"]').val();\n        var entry = $(row).find('[name=\"entry\"]').val();\n        var msg = {\n            \"topic\": \"add_trigger\",\n            \"payload\": {\n                \"name\": name,\n                \"room\": room,\n                \"type\": type,\n                \"system\": system,\n                \"device\": device,\n                \"entry\": entry\n            }\n        }\n        $node.trigger('send', msg)\n    }\n\n    //EDIT FUNCTION\n    function editTrigger(data, id) {\n        var row = data.closest(\"tr\"); // Find the row\n        var name = $(row).find('[name=\"name\"]').val();\n        var room = $(row).find('[name=\"room\"]').val();\n        var type = $(row).find('[name=\"type\"]').val();\n        var system = $(row).find('[name=\"system\"]').val();\n        var device = $(row).find('[name=\"device\"]').val();\n        var entry = $(row).find('[name=\"entry\"]').val();\n        var msg = {\n            \"topic\": \"edit_trigger\",\n            \"payload\": {\n                \"_id\": id,\n                \"name\": name,\n                \"room\": room,\n                \"type\": type,\n                \"system\": system,\n                \"device\": device,\n                \"entry\": entry\n            }\n        }\n        $node.trigger('send', msg)\n    }\n\n    //DELETE FUNCTION\n    function deleteTrigger(data) {\n        triggers_list_modal.style.display = \"block\";\n        document.getElementById('triggers_list_modal_title').innerHTML = \"MISE EN GARDE\";\n        document.getElementById('triggers_list_modal_info').innerHTML = \"Cette action est irréversible. Le déclencheur sera définitivement supprimé...\";\n        messageTriggersList = {\n            \"topic\": \"delete_trigger\",\n            \"payload\": {\n                \"_id\" : data\n            }\n        }\n    }\n    \n    //RELOAD ALL THE DATAS\n    function cancelAddTrigger() {\n        $node.trigger('send', {\"topic\": \"reload_triggers_list\"})\n    }\n\n    // Set variable to record msg.payload\n    var messageTriggersList;\n\n    // Get the modal\n    var triggers_list_modal = document.getElementById('triggers_list_modal');\n        \n    function triggersListModalValidate() {\n        $node.trigger('send', messageTriggersList);\n        triggers_list_modal.style.display = \"none\";\n    }\n\n    function triggersListModalCancelled() {\n        triggers_list_modal.style.display = \"none\";\n    }\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "5",
+        "accessBehavior": "hide",
+        "x": 270,
+        "y": 1240,
+        "wires": [
+            [
+                "c101f552cd266fac"
+            ]
+        ]
+    },
+    {
+        "id": "0689930339b7e921",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Convert",
+        "func": "//for MCP23017\nvar MCP23017 = msg.payload[0].MCP23017;\nvar mcp23017_inputs_list = [];\n\n//for KMS868\nvar KMS868 = msg.payload[0].KMS868;\nvar kms868_inputs_list = [];\n\n//for ESP32\nvar ESP32 = msg.payload[0].ESP32;\nvar esp32_inputs_list = [];\n\nmsg.payload = msg.payload[0].inputs || [];\n\n//make MCP23017 list\nif (MCP23017.mcp_enabled) {\n    var mcp_devices = [\n        { name: \"mcp32\", enabled: MCP23017.mcp32.enabled, value_A: MCP23017.mcp32.value_A, value_B: MCP23017.mcp32.value_B },\n        { name: \"mcp33\", enabled: MCP23017.mcp33.enabled, value_A: MCP23017.mcp33.value_A, value_B: MCP23017.mcp33.value_B },\n        { name: \"mcp34\", enabled: MCP23017.mcp34.enabled, value_A: MCP23017.mcp34.value_A, value_B: MCP23017.mcp34.value_B },\n        { name: \"mcp35\", enabled: MCP23017.mcp35.enabled, value_A: MCP23017.mcp35.value_A, value_B: MCP23017.mcp35.value_B },\n        { name: \"mcp36\", enabled: MCP23017.mcp36.enabled, value_A: MCP23017.mcp36.value_A, value_B: MCP23017.mcp36.value_B },\n        { name: \"mcp37\", enabled: MCP23017.mcp37.enabled, value_A: MCP23017.mcp37.value_A, value_B: MCP23017.mcp37.value_B },\n        { name: \"mcp38\", enabled: MCP23017.mcp38.enabled, value_A: MCP23017.mcp38.value_A, value_B: MCP23017.mcp38.value_B },\n        { name: \"mcp39\", enabled: MCP23017.mcp39.enabled, value_A: MCP23017.mcp39.value_A, value_B: MCP23017.mcp39.value_B }\n    ]\n    for (var a = 0; a < 8; a++) {\n        if (mcp_devices[a].enabled) {\n            var mcp_device = mcp_devices[a].name;\n            var inputs = [];\n            for (var i = 1; i < 9; i++) {\n                var input = true;\n                if (mcp_devices[a].value_A === \"Input\") {\n                    for (var y = 0; y < msg.payload.length; y++) {\n                        if (msg.payload[y].device === mcp_device && msg.payload[y].entry === \"channel_\" + i) {\n                            input = false;\n                        }\n                    }\n                    if (input) {\n                        inputs.push({\n                            \"name\": \"channel_\" + i,\n                            \"value\": \"channel_\" + i,\n                            \"disabled\": false,\n                        })\n                    }\n                    else {\n                        inputs.push({\n                            \"name\": \"channel_\" + i,\n                            \"value\": \"channel_\" + i,\n                            \"disabled\": true,\n                        })\n                    }\n                }\n            }\n            for (var i = 9; i < 17; i++) {\n                var input = true;\n                if (mcp_devices[a].value_B === \"Input\") {\n                    for (var y = 0; y < msg.payload.length; y++) {\n                        if (msg.payload[y].device === mcp_device && msg.payload[y].entry === \"channel_\" + i) {\n                            input = false;\n                        }\n                    }\n                    if (input) {\n                        inputs.push({\n                            \"name\": \"channel_\" + i,\n                            \"value\": \"channel_\" + i,\n                            \"disabled\": false,\n                        })\n                    }\n                    else {\n                        inputs.push({\n                            \"name\": \"channel_\" + i,\n                            \"value\": \"channel_\" + i,\n                            \"disabled\": true,\n                        })\n                    }\n                }\n            }\n            mcp23017_inputs_list.push({\n                \"device\": mcp_device,\n                \"name\": mcp_device.toUpperCase(),\n                \"entry\": inputs\n            })\n        }\n    }\n}\nmsg.mcp23017_inputs_list = mcp23017_inputs_list;\n\n//make KMS868 list\nif (KMS868.kms_enabled) {\n    KMS868 = KMS868.devices;\n    for (var a = 0; a<KMS868.length; a++) {\n        var inputs = [];\n        var device = KMS868[a]._id;\n        for (var i = 1; i < 17; i++) {\n            var input = true;\n            for (var y = 0; y < msg.payload.length; y++) {\n                if (msg.payload[y].device === device && msg.payload[y].entry === \"input\" + i) {\n                    input = false;\n                }\n            }\n            if (input) {\n                inputs.push({\n                    \"name\": \"channel_\" + i,\n                    \"value\": \"input\" + i,\n                    \"disabled\": false,\n                })\n            }\n            else {\n                inputs.push({\n                    \"name\": \"channel_\" + i,\n                    \"value\": \"input\" + i,\n                    \"disabled\": true,\n                })\n            }\n        }\n        kms868_inputs_list.push({\n            \"device\": KMS868[a]._id,\n            \"name\": KMS868[a].name,\n            \"entry\": inputs\n        })\n    }\n}\nmsg.kms868_inputs_list = kms868_inputs_list;\n\n//make ESP32 list\nif (ESP32.esp_enabled) {\n    ESP32 = ESP32.devices;\n    for (var a = 0; a < ESP32.length; a++) {\n        var device = ESP32[a]._id;\n\n        var inputs = [];\n        var lengthESP32_inputs = +ESP32[a].number_input + 1;\n        if (lengthESP32_inputs > 1) {\n            for (var i = 1; i < lengthESP32_inputs; i++) {\n                var input = true;\n                for (var y = 0; y < msg.payload.length; y++) {\n                    if (msg.payload[y].device === device && msg.payload[y].entry === \"input\" + i) {\n                        input = false;\n                    }\n                }\n                if (input) {\n                    inputs.push({\n                        \"name\": \"entrée_\" + i,\n                        \"value\": \"input\" + i,\n                        \"disabled\": false,\n                    })\n                }\n                else {\n                    inputs.push({\n                        \"name\": \"entrée_\" + i,\n                        \"value\": \"input\" + i,\n                        \"disabled\": true,\n                    })\n                }\n            }\n            /*esp32_inputs_list.push({\n                \"device\": ESP32[a]._id,\n                \"name\": ESP32[a].device,\n                \"entry\": inputs\n            })*/\n        }\n\n        var rfids = [];\n        var lengthESP32_rfid = +ESP32[a].number_rfid + 1;\n        if (lengthESP32_rfid > 1) {\n            for (var i = 1; i < lengthESP32_rfid; i++) {\n                var rfid = true;\n                for (var y = 0; y < msg.payload.length; y++) {\n                    if (msg.payload[y].device === device && msg.payload[y].entry === \"rfid\" + i) {\n                        rfid = false;\n                    }\n                }\n                if (rfid) {\n                    rfids.push({\n                        \"name\": \"rfid_\" + i,\n                        \"value\": \"rfid\" + i,\n                        \"disabled\": false,\n                    })\n                }\n                else {\n                    rfids.push({\n                        \"name\": \"rfid_\" + i,\n                        \"value\": \"rfid\" + i,\n                        \"disabled\": true,\n                    })\n                }\n            }\n            /*esp32_inputs_list.push({\n                \"device\": ESP32[a]._id,\n                \"name\": ESP32[a].device,\n                \"entry\": inputs\n            })*/\n        }\n\n        const all_inputs = inputs.concat(rfids);\n        if (all_inputs.length > 0) {\n            esp32_inputs_list.push({\n                \"device\": ESP32[a]._id,\n                \"name\": ESP32[a].device,\n                \"entry\": all_inputs\n            })\n        }\n    }\n}\nmsg.esp32_inputs_list = esp32_inputs_list;\n\n//msg.esp32_inputs_list = [];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1180,
+        "wires": [
+            [
+                "abbb2e4afe32cdd3"
+            ]
+        ]
+    },
+    {
+        "id": "e8e4d39f41269e69",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Get Rooms List",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } },\n    { $unwind: \"$rooms_list\" },\n    { $sort: { \"rooms_list.number\": 1 } }\n])\n\nmsg.topic = \"load_rooms_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1140,
+        "wires": [
+            [
+                "22cc6791e427b897"
+            ]
+        ]
+    },
+    {
+        "id": "22cc6791e427b897",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Rooms",
+        "collection": "config_system",
+        "operation": "aggregate",
+        "x": 480,
+        "y": 1140,
+        "wires": [
+            [
+                "a21d62828f46650c"
+            ]
+        ]
+    },
+    {
+        "id": "a21d62828f46650c",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "0ea444d24736682e",
+        "name": "Rooms_list",
+        "func": "msg.rooms_list = msg.payload || [];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1140,
+        "wires": [
+            [
+                "c1fb495e58a75ce8"
+            ]
+        ]
+    },
+    {
+        "id": "757e29753346cf86",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "unified-red",
+        "name": ""
+    },
+    {
+        "id": "716f2cb0ce20cd75",
+        "type": "ur_tab",
+        "name": "Déclencheurs",
+        "order": 1,
+        "group": "710b56c0a0de0871",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "710b56c0a0de0871",
+        "type": "ur_group",
+        "name": "Mécanismes & Déclencheurs",
+        "page": "3a6676a6d29a139a",
+        "order": 2,
+        "disp": false,
+        "widthLg": "12",
+        "widthMd": "12",
+        "widthSm": "12",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "3a6676a6d29a139a",
+        "type": "ur_page",
+        "name": "Déclencheurs et Mécanismes",
+        "folder": "352edd3d22ee906c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide",
+        "isMulti": false,
+        "isSingle": true,
+        "pageType": "single",
+        "inheritInst": false,
+        "expression": ""
+    },
+    {
+        "id": "352edd3d22ee906c",
+        "type": "ur_folder",
+        "name": "Install - Setup",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "b1080fb75016726b",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-mongodb": "0.2.5",
+            "unified-red": "2.7.2"
+        }
+    }
+]
