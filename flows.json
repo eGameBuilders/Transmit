@@ -1,0 +1,92 @@
+[
+    {
+        "id": "73945f3bdf8d2ffa",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "tab": "f3d924efde2d7c38",
+        "name": "MCP23017",
+        "order": 4,
+        "width": "12",
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML ET TABLEAU DE CONFIGURATION DES MODULES MCP\n// =========================================================================\n-->\n<h3 style=\"text-align:center;\">MCP23017</h3>\n\n<div style=\"display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 15px;\">\n    <span style=\"font-size: 1rem; font-weight: bold; text-decoration: underline;\">ACTIVER</span>\n\n    <!-- ANCHOR : STRUCTURE DE BOÎTES DE VOTRE V3 DU KEYPAD POUR LE COMMUTATEUR GÉNÉRAL -->\n    <div id=\"mcp_enabled_bg\" onclick=\"toggleMcpEnabledPill()\" class=\"btn btn-dark switch\" id=\"global_switch_wrapper\">\n        <div id=\"mcp_enabled_circle\" class=\"switchcircle\"></div>\n    </div>\n</div>\n\n<table id=\"mcp23017\" name=\"all_mcp\" style=\"display:none;\">\n    <tbody>\n        <tr>\n            <th class=\"center\" style=\"width:30%\">MCP</th>\n            <th class=\"center\" style=\"width:30%\">Actif</th>\n            <th class=\"center\" style=\"width:20%\">Pôles A</th>\n            <th class=\"center\" style=\"width:20%\">Pôles B</th>\n        </tr>\n    </tbody>\n</table>\n\n<script>\n    // =========================================================================\n// 2. RECEPTION : EXTRACTION VANILLA JS ET RENDU DES DONNEES DE LA BASE\n// =========================================================================\n    // REGISTRES BOOLÉENS SÉCURISÉS POUR SIMULER LES INPUTS EN JAVASCRIPT PUR\n    var isMcpGlobalEnabled = false;\n    var mcpRowsStateCache = {};\n    var isMcpGlobalLocked = false;\n\n    $node.on(\"update-value\", function(evt, data) {\n        // ÉTANCHÉITÉ DE L'AFFICHAGE : VÉRIFICATION STRICTE DU TOPIC DE CHARGEMENT\n        if (data && data.msg && data.msg.topic === \"load_MCP_datas\") {\n            var payload = data.msg.payload;\n            \n            // SÉCURISATION CONTRE LES PACKETS VIDES ET ADAPTATION À LA RACINE MONGODB4\n            if (payload && payload.length > 0) {\n                var dat = payload[0] || {}; // CORRECTION DE L'INDEX DE RACINE DE L'AGRÉGATION MONGODB\n                \n                // NETTOYAGE PRÉALABLE DU TABLEAU\n                clearAddressMCPList();\n\n                // VARIABLE DE CONTRÔLE DE SÉCURITÉ POUR LE BOUTON GÉNÉRAL\n                var isAnyMcpInUse = false;\n\n                // ARCHITECTURE DE LA BOUCLE : INDEX UNIQUE \"I\" POUR LES 8 ADRESSES I2C\n                for (var i = 0; i < 8; i++) {\n                    var mcpAddress = i + 32;\n                    var key = \"mcp\" + mcpAddress;\n                    var mcpData = dat[key] || {}; // LECTURE DYNAMIQUE DIRECTE SANS BOUCLE IMBRIQUÉE\n                    \n                    // ARCHIVAGE DE L'ÉTAT ACTIF DE LA LIGNE DANS LE CACHE LOCAL\n                    mcpRowsStateCache[key] = !!mcpData.enabled;\n\n                    // SI UN SEUL MCP EST UTILISÉ, ON LE NOTE POUR LE COMMUTATEUR GÉNÉRAL\n                    if (mcpData.inuse) {\n                        isAnyMcpInUse = true;\n                    }\n\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('name', 'address_mcp');\n                    \n                    // SÉCURITÉ INUSE : SI LE MODULE EST UTILISÉ PAR LE SCÉNARIO, ON VERROUILLE SON COMMUTATEUR\n                    var isDisabledClass = mcpData.inuse ? 'pe-none opacity-50' : '';\n                    var titleAlert = mcpData.inuse ? 'title=\"Ce module est utilisé dans une énigme active et ne peut pas être désactivé\"' : '';\n\n                    // DÉTERMINATION DE LA COULEUR BOOTSTRAP DE BASE POUR CHACHE SOUS-PILULE MCP\n                    var rowPillColor = mcpData.enabled ? 'btn-danger' : 'btn-dark';\n                    var rowCircleTransform = mcpData.enabled ? 'transform: translateX(22px);' : 'transform: translateX(0px);';\n\n                    // MUTATION SÉCURISÉE DES LIGNES DU CONSTRUCTEUR SUR LE DESIGN DE VOTRE V3 DU KEYPAD\n                    tr.innerHTML =\n                        '<td class=\"center\">' + key + '</td>' +\n                        '<td class=\"center\">' +\n                            '<div id=\"pill_' + key + '\" onclick=\"toggleMcpRowPill(this, \\'' + key + '\\')\" class=\"btn ' + rowPillColor + ' switch ' + isDisabledClass + '\" ' + titleAlert + '>' +\n                                '<div id=\"circle_' + key + '\" class=\"switchcircle\" style=\"' + rowCircleTransform + '\"></div>' +\n                            '</div>' +\n                        '</td>' +\n                        '<td class=\"center\" onchange=\"editMCP(this, \\'' + key + '\\')\">' +\n                            '<select name=\"value_mcp_A\">' +\n                                '<option value=\"Choisir...\" ' + (!mcpData.value_A ? 'selected' : '') + ' disabled>Choisir...</option>' +\n                                '<option value=\"Input\" ' + (mcpData.value_A === \"Input\" ? 'selected' : '') + '>Input</option>' +\n                                '<option value=\"Output\" ' + (mcpData.value_A === \"Output\" ? 'selected' : '') + '>Output</option>' +\n                            '</select>' +\n                        '</td>' +\n                        '<td class=\"center\" onchange=\"editMCP(this, \\'' + key + '\\')\">' +\n                            '<select name=\"value_mcp_B\">' +\n                                '<option value=\"Choisir...\" ' + (!mcpData.value_B ? 'selected' : '') + ' disabled>Choisir...</option>' +\n                                '<option value=\"Input\" ' + (mcpData.value_B === \"Input\" ? 'selected' : '') + '>Input</option>' +\n                                '<option value=\"Output\" ' + (mcpData.value_B === \"Output\" ? 'selected' : '') + '>Output</option>' +\n                            '</select>' +\n                        '</td>';\n                        \n                    var tableContainer = document.getElementById('mcp23017');\n                    if (tableContainer) {\n                        tableContainer.appendChild(tr);\n                    }\n                }\n                // =========================================================================\n                // APPLICATION DE L'ÉTAT ET DE LA SÉCURITÉ STRICTE SUR L'INTERRUPTEUR GÉNÉRAL\n                // =========================================================================\n                isMcpGlobalEnabled = !!dat.mcp_enabled;\n                refreshMcpGlobalVisual();\n                \n                var wrapper = document.getElementById('global_switch_wrapper');\n                var globalBg = document.getElementById('mcp_enabled_bg');\n                \n                if (isAnyMcpInUse) {\n                    isMcpGlobalLocked = true;\n                    if (globalBg) globalBg.classList.add('pe-none', 'opacity-50');\n                    if (wrapper) wrapper.setAttribute('title', 'Modification impossible : un ou plusieurs modules MCP sont actuellement requis par le scénario matériel');\n                } else {\n                    isMcpGlobalLocked = false;\n                    if (globalBg) globalBg.classList.remove('pe-none', 'opacity-50');\n                    if (wrapper) wrapper.removeAttribute('title');\n                }\n\n                // RAFRAÎCHISSEMENT FORCE DU COMPORTEMENT VISUEL DE MASQUAGE DU TABLEAU\n                showHideMCP();\n            }\n        }\n    });\n\n    // FONCTION DE RAFRAÎCHISSEMENT VISUEL EXCLUSIVE DU COMMUTATEUR GÉNÉRAL V3\n    function refreshMcpGlobalVisual() {\n        var bg = document.getElementById('mcp_enabled_bg');\n        var circle = document.getElementById('mcp_enabled_circle');\n        if (!bg || !circle) return;\n\n        if (isMcpGlobalEnabled) {\n            bg.classList.remove('btn-dark');\n            bg.classList.add('btn-danger');\n            circle.style.transform = \"translateX(22px)\";\n        } else {\n            bg.classList.remove('btn-danger');\n            bg.classList.add('btn-dark');\n            circle.style.transform = \"translateX(0px)\";\n        }\n    }\n\n    function showHideMCP() {\n        var tableContainer = document.getElementById('mcp23017');\n        if (tableContainer) {\n            if (isMcpGlobalEnabled) {\n                tableContainer.style.display = 'table'; // REMPLACEMENT DE BLOCK PAR TABLE POUR ÉVITER LES BUGS GRAPHIQUES DE STRUCTURE BOOTSTRAP\n            } else {\n                tableContainer.style.display = 'none';\n            }\n        }\n    }\n\n    function clearAddressMCPList() {\n        var addresses = document.querySelectorAll('[name=\"address_mcp\"]');\n        addresses.forEach(function(address) {\n            address.remove();\n        });\n    }\n\n// =========================================================================\n// 3. ACTIONS : TRANSMISSION DES ENVOIS AU FLUX SERVEUR NODE-RED\n// =========================================================================\n    // INTERCEPTION DE L'ACTION DE CLIC SUR LE COMMUTATEUR GÉNÉRAL SIMULÉ\n    function toggleMcpEnabledPill() {\n        if (isMcpGlobalLocked) return;\n\n        isMcpGlobalEnabled = !isMcpGlobalEnabled;\n        refreshMcpGlobalVisual();\n        showHideMCP();\n\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"enabled\": isMcpGlobalEnabled\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    // INTERCEPTION DE L'ACTION DE CLIC SUR L'UN DES 8 SWITCHS DE LIGNES SIMULÉS\n    function toggleMcpRowPill(element, mcpName) {\n        if (element.classList.contains('pe-none')) return;\n\n        var nextState = !mcpRowsStateCache[mcpName];\n        mcpRowsStateCache[mcpName] = nextState;\n\n        var circle = element.querySelector('.switchcircle');\n        if (nextState) {\n            element.classList.remove('btn-dark');\n            element.classList.add('btn-danger');\n            if (circle) circle.style.transform = \"translateX(22px)\";\n        } else {\n            element.classList.remove('btn-danger');\n            element.classList.add('btn-dark');\n            if (circle) circle.style.transform = \"translateX(0px)\";\n        }\n\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        var selectA = row.querySelector('[name=\"value_mcp_A\"]');\n        var selectB = row.querySelector('[name=\"value_mcp_B\"]');\n\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"mcp\": mcpName,\n                \"enabled\": nextState,\n                \"value_A\": selectA ? selectA.value : null,\n                \"value_B\": selectB ? selectB.value : null\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    function editMCP(element, mcpName) {\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        var selectA = row.querySelector('[name=\"value_mcp_A\"]');\n        var selectB = row.querySelector('[name=\"value_mcp_B\"]');\n\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"mcp\": mcpName,\n                \"enabled\": mcpRowsStateCache[mcpName] || false,\n                \"value_A\": selectA ? selectA.value : null,\n                \"value_B\": selectB ? selectB.value : null\n            }\n        };\n        $node.trigger('send', msg);\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "hide",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "cc50b349910c0a77"
+            ]
+        ],
+        "info": "Détails du scénario\n\nNom du scénario\nNom du déclencheur\nEtat initial du bouton de blocage\nNombre de boutons et leurs noms"
+    },
+    {
+        "id": "f3d924efde2d7c38",
+        "type": "ur_tab",
+        "name": "Addresses",
+        "order": 1,
+        "group": "15a5aa879decf622",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "15a5aa879decf622",
+        "type": "ur_group",
+        "name": "MCP23017",
+        "page": "97f1ff9eceaff397",
+        "order": 2,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": "12",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "97f1ff9eceaff397",
+        "type": "ur_page",
+        "name": "Automates",
+        "folder": "b8ad24c00d63b306",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide",
+        "isMulti": false,
+        "isSingle": true,
+        "pageType": "single",
+        "inheritInst": false,
+        "expression": ""
+    },
+    {
+        "id": "b8ad24c00d63b306",
+        "type": "ur_folder",
+        "name": "MASTER INSTALL",
+        "icon": "settings",
+        "order": 4,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "9f6510c90a94c326",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "unified-red": "2.7.2"
+        }
+    }
+]
