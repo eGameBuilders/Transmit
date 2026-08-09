@@ -1,0 +1,2412 @@
+[
+    {
+        "id": "b87f87d6b87a22c5",
+        "type": "tab",
+        "label": "AUTOMATES Config",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "960522989b588546",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "Mecanisms for Annexes",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a155fa6636448c05",
+            "fe5105eb57d8eab5",
+            "ab59ee96896ae5fc",
+            "32f70a78cf4df4ca",
+            "6895e11a76ba6c8c",
+            "acdd36158d4ab579",
+            "1ac316703db245d4",
+            "26e8563cd69d15d9",
+            "fca37f577e5dc323",
+            "8f67993a407034d3",
+            "be5d36b3476d26d5",
+            "ccd409f741f59f9a"
+        ],
+        "x": 94,
+        "y": 2679,
+        "w": 1082,
+        "h": 162
+    },
+    {
+        "id": "82be80a955b1b416",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "MCP23017",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "820362682b9f120b",
+            "73945f3bdf8d2ffa",
+            "fef3b96246a6bb85",
+            "c9e89e82ad2dbba6",
+            "7deebc27286df1e0",
+            "13d5f6c7024c7a5c",
+            "bb52f7f6a3edaedc",
+            "a16ce7d4a8f75c60",
+            "cc50b349910c0a77",
+            "5419384ac622bbd8",
+            "218c8b56a704e978",
+            "79e6374850fb14c1"
+        ],
+        "x": 94,
+        "y": 119,
+        "w": 1092,
+        "h": 162
+    },
+    {
+        "id": "84af860a5660db0d",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "Triggers for Annexes (with keypad)",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9eb20da56e8e804b",
+            "cae3882f2ded96d5",
+            "fbe66cd1a3f0c7e5",
+            "0c0ab286cf629e8b",
+            "086d5f6208902d06",
+            "c0115f09398755bc",
+            "4ddd64774850708f",
+            "dc8203695318bdde"
+        ],
+        "x": 94,
+        "y": 2539,
+        "w": 832,
+        "h": 122
+    },
+    {
+        "id": "c3c0f61d3bec7e19",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "KMS868",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "ef73873ea656384c",
+            "98695b2e18c5fb08",
+            "81198e5adab4daa5",
+            "4b2cb82f1f1e41b2",
+            "26d358dfdef6a9c7",
+            "1d66396b7bd1131a",
+            "0ccd09c97c18c9f5",
+            "9a9ff589fda6b5b6",
+            "69953e1431ed06e5",
+            "6e88bdd47ea6cc28",
+            "da7e418985799f63",
+            "14f63ea806cf97f1"
+        ],
+        "x": 94,
+        "y": 299,
+        "w": 1092,
+        "h": 162
+    },
+    {
+        "id": "2397660807b5116c",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "ESP32",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "7b1bd4699a9aa4c2",
+            "f57795686e7d9b3a",
+            "b9c9ecfe677a9315",
+            "0ccd09c97c18c9f6",
+            "9a9ff589fda6b5b7",
+            "69953e1431ed06e6",
+            "81198e5adab4daa6",
+            "4b2cb82f1f1e41b3",
+            "e9de069fff1e1a1d",
+            "84b76976f1d09962",
+            "ce30813ed62d38c2",
+            "9fec1ffe15dc769c"
+        ],
+        "x": 94,
+        "y": 479,
+        "w": 1092,
+        "h": 162
+    },
+    {
+        "id": "3d25b90416e21b3e",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "KEYPAD_DETAILS",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "74263c814f82d774",
+            "893a599c7c2d2079",
+            "74bea47d82f207ec",
+            "92d2ab44512f24ee",
+            "7f076366969e9cc5",
+            "39950a16e328db1c",
+            "015a5200ca7d74c0",
+            "dbf8398818aa83c1"
+        ],
+        "x": 94,
+        "y": 659,
+        "w": 1092,
+        "h": 122
+    },
+    {
+        "id": "ad7a29265903af62",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "SCREENS",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "4526fbf8e112c46d",
+            "94f1f2a0f2b86d02",
+            "e7bd391d4d101058",
+            "a1c09c1b87ce3a1d",
+            "259f9070017954ff",
+            "9025fe48a79e6e28",
+            "4e50b8f26bfc5e2c",
+            "431c3b74afc623a2"
+        ],
+        "x": 94,
+        "y": 939,
+        "w": 1092,
+        "h": 122
+    },
+    {
+        "id": "da306352f9ea41df",
+        "type": "group",
+        "z": "b87f87d6b87a22c5",
+        "name": "SPEAKERS",
+        "style": {
+            "label": true,
+            "fill": "#92d04f"
+        },
+        "nodes": [
+            "fe84659ee15cc324",
+            "dc48fef16ccf8fe7",
+            "931212f171af5115",
+            "0edce9e31a3ca4dd",
+            "9dc8ea6f06178d29",
+            "733b4e6d4f1b157f",
+            "56fd1bf5e7bece9f",
+            "38a0af61b4653ab7"
+        ],
+        "x": 94,
+        "y": 799,
+        "w": 1092,
+        "h": 122
+    },
+    {
+        "id": "dce37a3e9a630a44",
+        "type": "change",
+        "z": "b87f87d6b87a22c5",
+        "name": "Escape Name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "config.escape_name",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 60,
+        "wires": [
+            [
+                "a6d9716d9f84d997",
+                "4d6efc8238c038c2",
+                "1d0a455685ed4e43"
+            ]
+        ]
+    },
+    {
+        "id": "5e49fec9bedbbdb1",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "name": "Escape Name",
+        "links": [
+            "1ad294fa97d08471",
+            "1997ee62fe0186c3"
+        ],
+        "x": 115,
+        "y": 60,
+        "wires": [
+            [
+                "dce37a3e9a630a44"
+            ]
+        ]
+    },
+    {
+        "id": "a155fa6636448c05",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Dashboard Mecanisms",
+        "links": [
+            "42c15f2c787166cd",
+            "8d42b0abb281b4cd",
+            "0564be4818525c79",
+            "1dbba719faf446de",
+            "2140cbd778760c8a",
+            "7cd5ff9c082317e6",
+            "82e145c5236ed750",
+            "cebadbab523f3af9",
+            "79b546ec66f3de3e",
+            "57ec8be767d6755a",
+            "160f500004aaa582"
+        ],
+        "x": 135,
+        "y": 2720,
+        "wires": [
+            [
+                "26e8563cd69d15d9"
+            ]
+        ]
+    },
+    {
+        "id": "fe5105eb57d8eab5",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Dashboard Mecanims Action to MCP",
+        "mode": "link",
+        "links": [
+            "7350009c2a9274c6"
+        ],
+        "x": 1135,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "ab59ee96896ae5fc",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Get all datas",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } },\n    { $project: { \"outputs\": 1, \"_id\": 0 } },\n])\n\nmsg.topic = \"load_all_mecanisms\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 2760,
+        "wires": [
+            [
+                "32f70a78cf4df4ca"
+            ]
+        ]
+    },
+    {
+        "id": "32f70a78cf4df4ca",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Mecanisms",
+        "collection": "config_automation",
+        "operation": "aggregate",
+        "x": 430,
+        "y": 2760,
+        "wires": [
+            [
+                "6895e11a76ba6c8c"
+            ]
+        ]
+    },
+    {
+        "id": "6895e11a76ba6c8c",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Mecanisms_list",
+        "func": "msg.mecanisms_list = msg.payload[0].outputs || []\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 2760,
+        "wires": [
+            [
+                "1ac316703db245d4"
+            ]
+        ]
+    },
+    {
+        "id": "acdd36158d4ab579",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Channel & Payload",
+        "func": "var system = {\n    device: msg.payload.device,\n    entry: msg.payload.entry,\n    payload: +msg.payload.active\n}\n\nif (msg.payload.system === \"MCP\") {\n    return [system, null, null]\n}\n\nelse if (msg.payload.system === \"KMS\") {\n    return [null, system, null]\n}\n\nelse if (msg.payload.system === \"ESP\") {\n    return [null, null, system]\n}",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 2760,
+        "wires": [
+            [
+                "fe5105eb57d8eab5"
+            ],
+            [
+                "be5d36b3476d26d5"
+            ],
+            [
+                "ccd409f741f59f9a"
+            ]
+        ],
+        "outputLabels": [
+            "MCP",
+            "KMS",
+            null
+        ]
+    },
+    {
+        "id": "820362682b9f120b",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "Config MCP On Load",
+        "links": [
+            "218c8b56a704e978",
+            "4dc8c4eea519145c"
+        ],
+        "x": 135,
+        "y": 160,
+        "wires": [
+            [
+                "fef3b96246a6bb85"
+            ]
+        ]
+    },
+    {
+        "id": "73945f3bdf8d2ffa",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "tab": "f3d924efde2d7c38",
+        "name": "MCP23017",
+        "order": 4,
+        "width": "12",
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML ET TABLEAU DE CONFIGURATION DES MODULES MCP\n// =========================================================================\n-->\n<h3 style=\"text-align:center;\">MCP23017</h3>\n\n<div style=\"display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 15px; margin-bottom: 20px;\">\n    <span style=\"font-size: 1rem; font-weight: bold; text-decoration: underline;\">ACTIVER</span>\n\n    <!-- ANCHOR : STRUCTURE DE BOÎTES DE VOTRE V3 DU KEYPAD POUR LE COMMUTATEUR GÉNÉRAL -->\n    <div id=\"mcp_enabled_bg\" onclick=\"toggleMcpEnabledPill()\" class=\"btn btn-dark switch\" id=\"global_switch_wrapper\">\n        <div id=\"mcp_enabled_circle\" class=\"switchcircle\"></div>\n    </div>\n</div>\n\n<table id=\"mcp23017\" class=\"table-striped table-sm\" style=\"display:none;\">\n    <thead>\n        <tr class=\"table-dark\">\n            <th class=\"center\" style=\"width:30%\">MCP</th>\n            <th class=\"center\" style=\"width:30%\">Actif</th>\n            <th class=\"center\" style=\"width:20%\">Pôles A</th>\n            <th class=\"center\" style=\"width:20%\">Pôles B</th>\n        </tr>\n    </thead>\n    <tbody>\n        <!-- l'injection dynamique des tr s'effectue exclusivement dans ce corps étanche -->\n    </tbody>\n</table>\n\n<script>\n    // =========================================================================\n// 2. RECEPTION : EXTRACTION VANILLA JS ET RENDU DES DONNEES DE LA BASE\n// =========================================================================\n    // REGISTRES BOOLÉENS SÉCURISÉS POUR SIMULER LES INPUTS EN JAVASCRIPT PUR\n    var isMcpGlobalEnabled = false;\n    var mcpRowsStateCache = {};\n    var isMcpGlobalLocked = false;\n\n    $node.on(\"update-value\", function(evt, data) {\n        // ÉTANCHÉITÉ DE L'AFFICHAGE : VÉRIFICATION STRICTE DU TOPIC DE CHARGEMENT\n        if (data && data.msg && data.msg.topic === \"load_MCP_datas\") {\n            var payload = data.msg.payload;\n            \n            var tbody = document.querySelector('#mcp23017 tbody');\n            if (tbody) tbody.innerHTML = ''; // PURGE INSTANTANÉE EN UNE LIGNE DU CORPS UNIQUEMENT\n\n            if (payload && payload.length > 0 && tbody) {\n                var dat = payload[0] || {}; // CORRECTION SECURISEE DU DECODAGE DU TABLEAU MONGODB\n                \n                // boucle unique de 0 à 7 pour generer proprement les 8 adresses i2c\n                for (var i = 0; i < 8; i++) {\n                    var mcpAddress = i + 32;\n                    var key = \"mcp\" + mcpAddress;\n                    var mcpData = dat[key] || {}; \n                    \n                    mcpRowsStateCache[key] = !!mcpData.enabled;\n\n                    var tr = document.createElement('tr');\n                    \n                    // la securite inuse s'applique uniquement et de maniere etanche sur la ligne de la puce concerneee\n                    var isDisabledClass = mcpData.inuse ? 'pe-none opacity-50' : '';\n                    var titleAlert = mcpData.inuse ? 'title=\"Ce module est utilisé dans une énigme active et ne peut pas être désactivé\"' : '';\n                    var rowPillColor = mcpData.enabled ? 'btn-danger' : 'btn-dark';\n                    var rowCircleTransform = mcpData.enabled ? 'transform: translateX(22px);' : 'transform: translateX(0px);';\n\n                    // rendu des selecteurs simplifie conforme à ton dom d'origine\n                    tr.innerHTML =\n                        `<td class=\"center\">${key}</td>` +\n                        `<td class=\"center\">` +\n                            `<div id=\"pill_${key}\" onclick=\"toggleMcpRowPill(this, '${key}')\" class=\"btn ${rowPillColor} switch ${isDisabledClass}\" ${titleAlert}>` +\n                                `<div id=\"circle_${key}\" class=\"switchcircle\" style=\"${rowCircleTransform}\"></div>` +\n                            `</div>` +\n                        `</td>` +\n                        `<td class=\"center\" onchange=\"editMCP(this, '${key}')\">` +\n                            `<select class=\"fullDiv center\" name=\"value_mcp_A\">` +\n                                `<option value=\"Choisir...\" disabled>Choisir...</option>` +\n                                `<option value=\"Input\">Input</option>` +\n                                `<option value=\"Output\">Output</option>` +\n                            `</select>` +\n                        `</td>` +\n                        `<td class=\"center\" onchange=\"editMCP(this, '${key}')\">` +\n                            `<select class=\"fullDiv center\" name=\"value_mcp_B\">` +\n                                `<option value=\"Choisir...\" disabled>Choisir...</option>` +\n                                `<option value=\"Input\">Input</option>` +\n                                `<option value=\"Output\">Output</option>` +\n                            `</select>` +\n                        `</td>`;\n                        \n                    tbody.appendChild(tr);\n\n                    // application chirurgicale des configurations initiales via l'écriture protectrice || {}\n                    (tr.querySelector('[name=\"value_mcp_A\"]') || {}).value = mcpData.value_A || \"Choisir...\";\n                    (tr.querySelector('[name=\"value_mcp_B\"]') || {}).value = mcpData.value_B || \"Choisir...\";\n                }\n\n                // chargement securise de l'etat d'activation global et synchronisation visuelle\n                isMcpGlobalEnabled = !!dat.mcp_enabled;\n                refreshMcpGlobalVisual();\n                showHideMCP();\n            }\n        }\n    });\n\n    // function to handle global switch visual rendering\n    function refreshMcpGlobalVisual() {\n        var bg = document.querySelector('#mcp_enabled_bg');\n        var circle = document.querySelector('#mcp_enabled_circle');\n        if (!bg || !circle) return;\n\n        if (isMcpGlobalEnabled) {\n            bg.classList.remove('btn-dark');\n            bg.classList.add('btn-danger');\n            circle.style.transform = \"translateX(22px)\";\n        } else {\n            bg.classList.remove('btn-danger');\n            bg.classList.add('btn-dark');\n            circle.style.transform = \"translateX(0px)\";\n        }\n    }\n        // function de gestion du masquage synchrone du tableau\n    function showHideMCP() {\n        var tableContainer = document.querySelector('#mcp23017');\n        if (tableContainer) {\n            tableContainer.style.display = isMcpGlobalEnabled ? 'table' : 'none';\n        }\n    }\n\n// =========================================================================\n// 3. ACTIONS : TRANSMISSION DES ENVOIS AU FLUX SERVEUR NODE-RED\n// =========================================================================\n    // interception du clic sur le commutateur général v3\n    function toggleMcpEnabledPill() {\n        if (isMcpGlobalLocked) return;\n\n        isMcpGlobalEnabled = !isMcpGlobalEnabled;\n        refreshMcpGlobalVisual();\n        showHideMCP();\n\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"enabled\": isMcpGlobalEnabled\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    // interception du clic sur l'un des 8 switchs de lignes simulés\n    function toggleMcpRowPill(element, mcpName) {\n        if (element.classList.contains('pe-none')) return;\n\n        var nextState = !mcpRowsStateCache[mcpName];\n        mcpRowsStateCache[mcpName] = nextState;\n\n        var circle = element.querySelector('.switchcircle');\n        if (nextState) {\n            element.classList.remove('btn-dark');\n            element.classList.add('btn-danger');\n            if (circle) circle.style.transform = \"translateX(22px)\";\n        } else {\n            element.classList.remove('btn-danger');\n            element.classList.add('btn-dark');\n            if (circle) circle.style.transform = \"translateX(0px)\";\n        }\n\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        // lecture chirurgicale ultra-réduite en une ligne via le chaînage optionnel ?.value\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"mcp\": mcpName,\n                \"enabled\": nextState,\n                \"value_A\": row.querySelector('[name=\"value_mcp_A\"]')?.value || null,\n                \"value_B\": row.querySelector('[name=\"value_mcp_B\"]')?.value || null\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    // modification dynamique des menus déroulants de configuration de pôles\n    function editMCP(element, mcpName) {\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        // extraction en une ligne directe dans le payload sans variables intermédiaires\n        var msg = {\n            \"topic\": \"save_mcp_config\",\n            \"payload\": {\n                \"mcp\": mcpName,\n                \"enabled\": mcpRowsStateCache[mcpName] || false,\n                \"value_A\": row.querySelector('[name=\"value_mcp_A\"]')?.value || null,\n                \"value_B\": row.querySelector('[name=\"value_mcp_B\"]')?.value || null\n            }\n        };\n        $node.trigger('send', msg);\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "hide",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "cc50b349910c0a77"
+            ]
+        ],
+        "info": "Détails du scénario\n\nNom du scénario\nNom du déclencheur\nEtat initial du bouton de blocage\nNombre de boutons et leurs noms"
+    },
+    {
+        "id": "fef3b96246a6bb85",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "79e6374850fb14c1"
+            ]
+        ]
+    },
+    {
+        "id": "9eb20da56e8e804b",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "tab": "a31dd3eca6dcedb7",
+        "name": "Triggers Table",
+        "order": 3,
+        "width": 12,
+        "height": 0,
+        "format": "<h2 style=\"text-align:center;\">Déclencheurs</h2>\n\n<div id=\"triggers\" class=\"container\">\n</div>\n\n<script>\n    //CREATE TABLE\n    $node.on(\"update-value\", function(evt, data) {\n        var dat = data.msg.triggers_list;\n        var keypad = data.msg.keypad;\n        var keypad_enabled = data.msg.keypad_enabled;\n        var rooms = data.msg.rooms_list;\n        //clear table\n        clearTableTrigger();\n        //load datas\n        if (data.msg.topic === \"load_all_triggers\") {\n            //create new tables\n            var triggersBloc = document.getElementById('triggers');\n            var table = document.createElement('table');\n            table.setAttribute('name', 'triggers'); //to delete the data on load\n            triggersBloc.appendChild(table);\n            //create rooms titles\n            rooms.forEach(function(objtitle) {\n                var trtitle = document.createElement('tr');\n                trtitle.setAttribute('name', 'room'); //to delete the data on load\n                trtitle.innerHTML =\n                '<th class=\"center\" style=\"width:40%\">' + objtitle.name + '</th>'+\n                '<th class=\"center\" style=\"width:60%\">Action</th>'\n                var showroom = true;\n                //create triggers\n                dat.forEach(function(obj) {\n                    if (objtitle._id === obj.room) {\n                        if (obj.type !== \"Non Visible\") {\n                            if (showroom) {\n                                table.appendChild(trtitle);\n                                showroom = false;\n                            }\n                            var buttons;\n                            //if ($.isNumeric(obj.active)) {\n                            if (obj.system === \"ESP\" && obj.entry.includes(\"rfid\") && obj.active_name !== undefined) {\n                                //Create \"Button\"\n                                buttons = '<div class=\"btn-group d-flex\" role=\"group\"><button class=\"btn btn-danger btn-sm p-1 w-100\">' + obj.active_name + '</button></div>';\n                            }\n                            else if (obj.system === \"ESP\" && obj.entry.includes(\"rfid\") && obj.active_name === undefined){\n                                //Create \"Button\"\n                                buttons = '<div class=\"btn-group d-flex\" role=\"group\"><button class=\"btn btn-warning btn-sm p-1 w-100\">Pas d\\'élément détecté</button></div>';\n                            }\n                            else if (obj.active === undefined || obj.active === \"\"){\n                                //Create \"Button\"\n                                buttons = '<div class=\"btn-group d-flex\" role=\"group\"><button class=\"btn btn-dark btn-sm p-1 w-100\">Pas d\\'état connu</button></div>';\n                            }\n                            else {//if (obj.active !== \"ESP\") {\n                                //Create buttons\n                                var button_name = [\"OFF\", \"ON\"];\n                                var button_1 = \"\";\n                                var button_2 = \"\";\n                                //Create button_1\n                                if (+obj.active === 1) {button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\')\">' + button_name[0] + '</button>'; }\n                                else {button_1 = '<button class=\"btn btn-danger btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\')\">' + button_name[0] + '</button>'; }\n                                //Create button_2\n                                if (+obj.active === 1) { button_2 = '<button class=\"btn btn-danger btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\')\">' + button_name[1] + '</button>'; }\n                                else { button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\')\">' + button_name[1] + '</button>'; }\n                                buttons = '<div class=\"btn-group d-flex\" role=\"group\">' + button_1 + button_2 + '</div>';\n                            }\n                            /*else if (obj.active !== undefined && obj.active !== \"\") {\n                                //Create \"Button\"\n                                buttons = '<div class=\"btn-group d-flex\" role=\"group\"><button class=\"btn btn-danger btn-sm p-1 w-100\">' + obj.active_name + '</button></div>';\n                            }*/\n                            \n\n                            //Create Table\n                            var tr = document.createElement('tr');\n                            tr.setAttribute('name', 'trigger'); //to delete the data on load\n                            tr.innerHTML =\n                            '<td style=\"width:40%\">' + obj.name + '</td>' +\n                            '<td style=\"width:60%\">' + buttons + '</td>'\n                            table.appendChild(tr);\n                        }\n                    }\n                });\n                var br = document.createElement('br');\n                table.appendChild(br);\n            })\n            //create NO rooms titles\n            var trtitle = document.createElement('tr');\n            trtitle.setAttribute('name', 'room'); //to delete the data on load\n            trtitle.innerHTML =\n            '<th class=\"center\" style=\"width:40%\">Pas de salle</th>'+\n            '<th class=\"center\" style=\"width:60%\">Action</th>'\n            var showroom = true;\n            //create triggers\n            dat.forEach(function(obj) {\n                if (obj.room == null) {\n                    if (obj.type !== \"Non Visible\") {\n                        if (showroom) {\n                            table.appendChild(trtitle);\n                            showroom = false;\n                        }\n                        //Create buttons\n                        var button_name = [];\n                        var button_1 = \"\";\n                        var button_2 = \"\";\n                        //Set name to buttons\n                        button_name = [\"OFF\", \"ON\"];\n                        //Create button_1\n                        if (obj.active === 1) {button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\')\">' + button_name[0] + '</button>'; }\n                        else {button_1 = '<button class=\"btn btn-danger btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\')\">' + button_name[0] + '</button>'; }\n                        //Create button_2\n                        if (obj.active === 1) { button_2 = '<button class=\"btn btn-danger btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\')\">' + button_name[1] + '</button>'; }\n                        else { button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\')\">' + button_name[1] + '</button>'; }\n                        var buttons = '<div class=\"btn-group d-flex\" role=\"group\">' + button_1 + button_2 + '</div>';\n\n                        //Create Table\n                        var tr = document.createElement('tr');\n                        tr.setAttribute('name', 'trigger'); //to delete the data on load\n                        tr.innerHTML =\n                        '<td style=\"width:40%\">' + obj.name + '</td>' +\n                        '<td style=\"width:60%\">' + buttons + '</td>'\n                        table.appendChild(tr);\n                    }\n                }\n            });\n            var br = document.createElement('br');\n            table.appendChild(br);\n            //Create Keypad\n            if (keypad_enabled) {\n                var tr = document.createElement('tr');\n                tr.setAttribute('name', 'trigger'); //to delete the data on load\n                tr.innerHTML =\n                '<td style=\"width:40%\">KEYPAD</td>' +\n                '<td style=\"width:60%\" class=\"center\">' + keypad + '</td>'\n                table.appendChild(tr);\n            }\n        }\n    });\n\n    //CLEAR ALL LINES OF THE TABLE\n    function clearTableTrigger() {\n        var rooms = document.querySelectorAll('[name = \"room\"]');\n            rooms.forEach(room => {\n            room.remove();\n        });\n        var triggers = document.querySelectorAll('[name = \"triggers\"]');\n        triggers.forEach(trigger => {\n            trigger.remove();\n        });\n    }\n\n    //BUTTONS FUNCTION\n    function buttonClick(state, _id) {\n        $node.trigger('send', {\n            \"topic\": \"active_state\",\n            \"payload\": {\n                \"_id\": _id,\n                \"active\": state\n            }\n        });\n    }\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "",
+        "accessBehavior": "hide",
+        "x": 820,
+        "y": 2620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cae3882f2ded96d5",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "name": "Dashboard Triggers",
+        "links": [
+            "18122947644665eb",
+            "36e2c43d53a20893",
+            "14bde60b750ded03",
+            "a3f4b52e84d7bc89",
+            "cae6d6e8631502b4",
+            "84d97eed896b75c8",
+            "b36c518193d93596",
+            "4945af114a13a214",
+            "ca330a19c1d60690",
+            "e1ff8a785a609af4",
+            "354fd2705ea32dfb",
+            "6597a4ca10227fc3",
+            "46611a85a043f027"
+        ],
+        "x": 135,
+        "y": 2580,
+        "wires": [
+            [
+                "4ddd64774850708f"
+            ]
+        ]
+    },
+    {
+        "id": "fbe66cd1a3f0c7e5",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "name": "Get all inputs",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } },\n    { $project: { \"inputs\": 1, \"_id\": 0 } },\n])\n\nmsg.topic = \"load_all_triggers\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 2620,
+        "wires": [
+            [
+                "0c0ab286cf629e8b"
+            ]
+        ]
+    },
+    {
+        "id": "0c0ab286cf629e8b",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Triggers",
+        "collection": "config_automation",
+        "operation": "aggregate",
+        "x": 420,
+        "y": 2620,
+        "wires": [
+            [
+                "086d5f6208902d06"
+            ]
+        ]
+    },
+    {
+        "id": "086d5f6208902d06",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "name": "Triggers_list",
+        "func": "msg.triggers_list = msg.payload[0].inputs || []\nmsg.keypad = global.get('Memory.Keypad.Code');\n\nif (global.get('Memory.Keypad.keypad_enabled') === true) {\n    msg.keypad_enabled = true;\n}\nelse {\n    msg.keypad_enabled = false;\n}\n\nif (msg.keypad === \"\" || msg.keypad === undefined) {\n    msg.keypad = \"AUCUN CODE EN COURS\";\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 2620,
+        "wires": [
+            [
+                "9eb20da56e8e804b"
+            ]
+        ]
+    },
+    {
+        "id": "a6d9716d9f84d997",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "d": true,
+        "tab": "a31dd3eca6dcedb7",
+        "name": "DASHBOARD Triggers",
+        "order": 1,
+        "width": "12",
+        "height": 0,
+        "format": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n<script>\n    $node.on(\"update-value\", function(evt, data) {\n    var title = data.msg.payload;\n    document.title = title;\n    $( \".logo-name\").html(title);\n    $('meta[name=apple-mobile-web-app-title]').remove();\n    $('head').append( '<meta name=\"apple-mobile-web-app-title\" content=\"' + title + '\">' );\n    $( \"div[aria-label*='breadcrumb']\" ).hide();\n});\n</script>\n\n<!--ONLOAD SCRIPT-->\n<script type=\"text/javascript\">\n  $(document).ready(()=>{ \n    $node.trigger('send', {\"payload\": []});\n  });\n</script>\n\n<style>\n    .switch {\n        position: relative;\n        display: inline-block;\n        width: 40px;\n        height: 20px;\n    }\n\n    .switch input {\n        opacity: 0;\n        width: 0;\n        height: 0;\n    }\n\n    .slider {\n        position: absolute;\n        cursor: pointer;\n        top: 0;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        background-color: #ffc107; //warning yellow\n        -webkit-transition: .2s;\n        transition: .2s;\n    }\n\n    .slider:before {\n        position: absolute;\n        content: \"\";\n        height: 16px;\n        width: 16px;\n        left: 2px;\n        bottom: 2px;\n        background-color: white;\n        -webkit-transition: .2s;\n        transition: .2s;\n    }\n\n    input:checked+.slider {\n        background-color: #dc3545; //danger red\n    }\n\n    input:focus+.slider {\n        box-shadow: 0 0 1px #2196F3;\n    }\n\n    input:checked+.slider:before {\n        -webkit-transform: translateX(20px);\n        -ms-transform: translateX(20px);\n        transform: translateX(20px);\n    }\n\n    /* Rounded sliders */\n    .slider.round {\n        border-radius: 34px;\n    }\n\n    .slider.round:before {\n        border-radius: 50%;\n    }\n\n    th {\n        height: 20px;\n        transition: all 0.3s;\n        font-weight: bold;\n        /*cursor: pointer;*/\n    }\n\n    /*td, tr, th {\n        border: 1px solid black;\n        border-collapse: collapse;\n        border-spacing: 0;\n    }*/\n\n    .dragline {\n        cursor: all-scroll;\n    }\n\n    table {\n        width: 100%;\n        -webkit-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n    }\n\n    .center {\n        text-align: center;\n    }\n\n    .btn {\n        border: 1px solid black;\n        text-transform: uppercase;\n        font-weight: bold;\n    }\n\n    .container {\n        container-type: inline-size;\n        padding: 0!important;\n        resize: horizontal;\n    }\n\n    .title-card {\n        font-weight: bold;\n        font-size: clamp(1rem, 4cqw, 2rem);\n    }\n\n    .adaptative-text {\n        font-size: clamp(0.6rem, 4cqw, 1rem);\n    }\n\n    .adaptative-text-big {\n        font-size: clamp(2rem, 10cqw, 4rem);\n    }\n\n    .adaptative-text-table {\n    font-size: clamp(0.5rem, 3cqw, 1rem);\n    }\n\n    /* The Modal (background) */\n    .modal {\n        text-align: center;\n        display: none;\n        /* Hidden by default */\n        position: fixed;\n        /* Stay in place */\n        opacity: 0.99;\n        z-index: 100;\n        /* Sit on top */\n        padding-top: 15%;\n        /* Location of the box */\n        left: 0;\n        top: 0;\n        width: 100%;\n        /* Full width */\n        height: 100%;\n        /* Full height */\n        overflow: auto;\n    }\n\n    /* Modal Content */\n    .modal-content {\n        position: relative;\n        background-color: #fefefe;\n        margin: auto;\n        padding: 0;\n        border: 1px solid #888;\n        width: 50%;\n        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n        -webkit-animation-name: bounce;\n        -webkit-animation-duration: 1s;\n        animation-name: bounce;\n        animation-duration: 1s\n    }\n\n    /* Add Animation */\n    @-webkit-keyframes animatetop {\n        from {\n            top: -300px;\n            opacity: 0\n        }\n\n        to {\n            top: 0;\n            opacity: 1\n        }\n    }\n\n    @keyframes animatetop {\n        from {\n            top: -300px;\n            opacity: 0\n        }\n\n        to {\n            top: 0;\n            opacity: 1\n        }\n    }\n\n    .modal-header {\n        padding: 2px 16px;\n        background-color: red;\n        color: white;\n    }\n\n    .modal-body {\n        padding: 2px 16px;\n    }\n\n    .modal-footer {\n        padding: 2px 16px;\n        background-color: #5cb85c;\n        color: white;\n    }\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "",
+        "accessBehavior": "hide",
+        "x": 1980,
+        "y": 60,
+        "wires": [
+            [
+                "18122947644665eb"
+            ]
+        ]
+    },
+    {
+        "id": "1ac316703db245d4",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "tab": "818430c344af7410",
+        "name": "Mecanims Table",
+        "order": 3,
+        "width": 12,
+        "height": 0,
+        "format": "<h2 style=\"text-align:center;\">Mécanismes</h2>\n\n<div id=\"mecanisms\" class=\"container\">\n</div>\n\n<script>\n    //CREATE TABLE\n    $node.on(\"update-value\", function(evt, data) {\n        var rooms = data.msg.rooms_list;\n        var dat = data.msg.mecanisms_list;\n        //clear table\n        clearTableMecanism();\n        //load datas\n        if (data.msg.topic === \"load_all_mecanisms\") {\n            //create new tables\n            var mecanismsBloc = document.getElementById('mecanisms');\n            var table = document.createElement('table');\n            table.setAttribute('name', 'mecanisms'); //to delete the data on load\n            mecanismsBloc.appendChild(table);\n            //create rooms titles\n            rooms.forEach(function(objtitle) {\n                var trtitle = document.createElement('tr');\n                trtitle.innerHTML =\n                '<th class=\"center\" style=\"width:40%\">' + objtitle.name + '</th>'+\n                '<th class=\"center\" style=\"width:60%\">Action</th>'\n                var showroom = true;\n                //create mecanisms\n                dat.forEach(function(obj) {\n                    if (objtitle._id === obj.room) {\n                        if (obj.type !== \"Non Visible\") {\n                            if (showroom) {\n                                table.appendChild(trtitle);\n                                showroom = false;\n                            }\n                            //Create buttons\n                            var button_name = [];\n                            var button_1 = \"\";\n                            var button_2 = \"\";\n                            //Set name to buttons\n                            if (obj.type === \"Mécanisme Inversé\") { button_name = [\"ACTIVER\", \"DESACTIVER\"] }\n                            else if (obj.type === \"Mécanisme\") { button_name = [\"DESACTIVER\", \"ACTIVER\"] }\n                            else if (obj.type === \"Lock\") { button_name = [\"OUVRIR\", \"FERMER\"] }\n                            else if (obj.type === \"Lumière\"|| obj.type === \"Ecran\") { button_name = [\"ETEINDRE\", \"ALLUMER\"] }\n                            else { button_name = [\"OFF\", \"ON\"] }\n                            //Create buttons\n                            if (+obj.active === 0) {\n                                button_1 = '<button class=\"btn btn-danger  btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                                button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                            }\n                            else if (+obj.active === 1) {\n                                button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                                button_2 = '<button class=\"btn btn-danger  btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                            }\n                            else {\n                                button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                                button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                            }\n                            var buttons = '<div class=\"btn-group d-flex\" role=\"group\">' + button_1 + button_2 + '</div>';\n\n                            //Create Row\n                            var tr = document.createElement('tr');\n                            tr.innerHTML =\n                            '<td style=\"width:40%\">' + obj.name + '</td>' +\n                            '<td style=\"width:60%\">' + buttons + '</td>'\n                            var br = document.createElement('br');\n                            table.appendChild(tr);\n                        }\n                    }\n                });\n                var br = document.createElement('br');\n                table.appendChild(br);\n            });\n            //create NO rooms titles\n            var trtitle = document.createElement('tr');\n            trtitle.innerHTML =\n            '<th class=\"center\" style=\"width:40%\">Pas de salle</th>'+\n            '<th class=\"center\" style=\"width:60%\">Action</th>'\n            var showroom = true;\n            //create triggers\n            dat.forEach(function(obj) {\n                if (obj.room == null) {\n                    if (obj.type !== \"Non Visible\") {\n                        if (showroom) {\n                            table.appendChild(trtitle);\n                            showroom = false;\n                        }\n                        //Create buttons\n                        var button_name = [];\n                        var button_1 = \"\";\n                        var button_2 = \"\";\n                        //Set name to buttons\n                        if (obj.type === \"ElectroAimant\" || obj.type === \"Lock\") { button_name = [\"FERMER\", \"OUVRIR\"] }\n                        else if (obj.type === \"Lumière\"|| obj.type === \"Ecran\") { button_name = [\"ETEINDRE\", \"ALLUMER\"] }\n                        else { button_name = [\"OFF\", \"ON\"] }\n                        //Create buttons\n                        if (obj.active === 0) {\n                            button_1 = '<button class=\"btn btn-danger  btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                            button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                        }\n                        else if (obj.active === 1) {\n                            button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                            button_2 = '<button class=\"btn btn-danger  btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                        }\n                        else {\n                            button_1 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(0, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[0] + '</button>';\n                            button_2 = '<button class=\"btn btn-warning btn-sm p-1 w-100\" onclick=\"buttonClick(1, \\'' + obj._id + '\\', \\'' + obj.system + '\\', \\'' + obj.device + '\\', \\'' + obj.entry + '\\')\">' + button_name[1] + '</button>';\n                        }\n                        var buttons = '<div class=\"btn-group d-flex\" role=\"group\">' + button_1 + button_2 + '</div>';\n\n                        //Create Row\n                        var tr = document.createElement('tr');\n                        tr.innerHTML =\n                        '<td style=\"width:40%\">' + obj.name + '</td>' +\n                        '<td style=\"width:60%\">' + buttons + '</td>'\n                        table.appendChild(tr);\n                    }\n                }\n            });\n            var br = document.createElement('br');\n            table.appendChild(br);\n        }\n    });\n\n    //CLEAR ALL LINES OF THE TABLE\n    function clearTableMecanism() {\n        $('table[name=\"mecanisms\"]').remove();\n    }\n\n    function buttonClick(state, _id, system, device, entry) {\n        $node.trigger('send', {\n            \"topic\": \"active_state\",\n            \"payload\": {\n                \"_id\": _id,\n                \"system\": system,\n                \"device\": device,\n                \"entry\": entry,\n                \"active\": state\n            }\n        });\n    }\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "",
+        "accessBehavior": "hide",
+        "x": 820,
+        "y": 2760,
+        "wires": [
+            [
+                "acdd36158d4ab579"
+            ]
+        ]
+    },
+    {
+        "id": "18122947644665eb",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "d": true,
+        "name": "On Load Installation_Setup",
+        "mode": "link",
+        "links": [
+            "cae3882f2ded96d5"
+        ],
+        "x": 2135,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4d6efc8238c038c2",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "d": true,
+        "tab": "818430c344af7410",
+        "name": "DASHBOARD Mecanisms",
+        "order": 1,
+        "width": "12",
+        "height": 0,
+        "format": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n<script>\n    $node.on(\"update-value\", function(evt, data) {\n    var title = data.msg.payload;\n    document.title = title;\n    $( \".logo-name\").html(title);\n    $('meta[name=apple-mobile-web-app-title]').remove();\n    $('head').append( '<meta name=\"apple-mobile-web-app-title\" content=\"' + title + '\">' );\n    $( \"div[aria-label*='breadcrumb']\" ).hide();\n});\n</script>\n\n<!--ONLOAD SCRIPT-->\n<script type=\"text/javascript\">\n  $(document).ready(()=>{ \n    $node.trigger('send', {\"payload\": []});\n  });\n</script>\n\n<style>\n    .switch {\n        position: relative;\n        display: inline-block;\n        width: 40px;\n        height: 20px;\n    }\n\n    .switch input {\n        opacity: 0;\n        width: 0;\n        height: 0;\n    }\n\n    .slider {\n        position: absolute;\n        cursor: pointer;\n        top: 0;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        background-color: #ffc107; //warning yellow\n        -webkit-transition: .2s;\n        transition: .2s;\n    }\n\n    .slider:before {\n        position: absolute;\n        content: \"\";\n        height: 16px;\n        width: 16px;\n        left: 2px;\n        bottom: 2px;\n        background-color: white;\n        -webkit-transition: .2s;\n        transition: .2s;\n    }\n\n    input:checked+.slider {\n        background-color: #dc3545; //danger red\n    }\n\n    input:focus+.slider {\n        box-shadow: 0 0 1px #2196F3;\n    }\n\n    input:checked+.slider:before {\n        -webkit-transform: translateX(20px);\n        -ms-transform: translateX(20px);\n        transform: translateX(20px);\n    }\n\n    /* Rounded sliders */\n    .slider.round {\n        border-radius: 34px;\n    }\n\n    .slider.round:before {\n        border-radius: 50%;\n    }\n\n    th {\n        height: 20px;\n        transition: all 0.3s;\n        font-weight: bold;\n        /*cursor: pointer;*/\n    }\n\n    /*td, tr, th {\n        border: 1px solid black;\n        border-collapse: collapse;\n        border-spacing: 0;\n    }*/\n\n    .dragline {\n        cursor: all-scroll;\n    }\n\n    table {\n        width: 100%;\n        -webkit-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n    }\n\n    .center {\n        text-align: center;\n    }\n\n    .btn {\n        border: 1px solid black;\n        text-transform: uppercase;\n        font-weight: bold;\n    }\n\n    .container {\n        container-type: inline-size;\n        padding: 0!important;\n        resize: horizontal;\n    }\n\n    .title-card {\n        font-weight: bold;\n        font-size: clamp(1rem, 4cqw, 2rem);\n    }\n\n    .adaptative-text {\n        font-size: clamp(0.6rem, 4cqw, 1rem);\n    }\n\n    .adaptative-text-big {\n        font-size: clamp(2rem, 10cqw, 4rem);\n    }\n\n    .adaptative-text-table {\n    font-size: clamp(0.5rem, 3cqw, 1rem);\n    }\n\n    /* The Modal (background) */\n    .modal {\n        text-align: center;\n        display: none;\n        /* Hidden by default */\n        position: fixed;\n        /* Stay in place */\n        opacity: 0.99;\n        z-index: 100;\n        /* Sit on top */\n        padding-top: 15%;\n        /* Location of the box */\n        left: 0;\n        top: 0;\n        width: 100%;\n        /* Full width */\n        height: 100%;\n        /* Full height */\n        overflow: auto;\n    }\n\n    /* Modal Content */\n    .modal-content {\n        position: relative;\n        background-color: #fefefe;\n        margin: auto;\n        padding: 0;\n        border: 1px solid #888;\n        width: 50%;\n        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n        -webkit-animation-name: bounce;\n        -webkit-animation-duration: 1s;\n        animation-name: bounce;\n        animation-duration: 1s\n    }\n\n    /* Add Animation */\n    @-webkit-keyframes animatetop {\n        from {\n            top: -300px;\n            opacity: 0\n        }\n\n        to {\n            top: 0;\n            opacity: 1\n        }\n    }\n\n    @keyframes animatetop {\n        from {\n            top: -300px;\n            opacity: 0\n        }\n\n        to {\n            top: 0;\n            opacity: 1\n        }\n    }\n\n    .modal-header {\n        padding: 2px 16px;\n        background-color: red;\n        color: white;\n    }\n\n    .modal-body {\n        padding: 2px 16px;\n    }\n\n    .modal-footer {\n        padding: 2px 16px;\n        background-color: #5cb85c;\n        color: white;\n    }\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "",
+        "accessBehavior": "hide",
+        "x": 1990,
+        "y": 100,
+        "wires": [
+            [
+                "42c15f2c787166cd"
+            ]
+        ]
+    },
+    {
+        "id": "42c15f2c787166cd",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "d": true,
+        "name": "On Load Installation_Setup",
+        "mode": "link",
+        "links": [
+            "a155fa6636448c05"
+        ],
+        "x": 2135,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ef73873ea656384c",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "Config KMS On Load",
+        "links": [
+            "1d66396b7bd1131a",
+            "4dc8c4eea519145c",
+            "9d612866876bb2d8",
+            "080ea3255c446bbc"
+        ],
+        "x": 135,
+        "y": 340,
+        "wires": [
+            [
+                "98695b2e18c5fb08"
+            ]
+        ]
+    },
+    {
+        "id": "4ddd64774850708f",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "name": "Get Rooms List",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } }\n])\n\nmsg.topic = \"load_rooms_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 2580,
+        "wires": [
+            [
+                "dc8203695318bdde"
+            ]
+        ]
+    },
+    {
+        "id": "dc8203695318bdde",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Rooms",
+        "collection": "config_system",
+        "operation": "aggregate",
+        "x": 620,
+        "y": 2580,
+        "wires": [
+            [
+                "c0115f09398755bc"
+            ]
+        ]
+    },
+    {
+        "id": "c0115f09398755bc",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "84af860a5660db0d",
+        "name": "Rooms_list",
+        "func": "msg.rooms_list = msg.payload[0].rooms_list || []\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 2580,
+        "wires": [
+            [
+                "fbe66cd1a3f0c7e5"
+            ]
+        ]
+    },
+    {
+        "id": "26e8563cd69d15d9",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Get Rooms List",
+        "func": "msg.payload = ([\n    { $match: { \"_id\": \"init\" } }\n])\n\nmsg.topic = \"load_rooms_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 2720,
+        "wires": [
+            [
+                "fca37f577e5dc323"
+            ]
+        ]
+    },
+    {
+        "id": "fca37f577e5dc323",
+        "type": "mongodb in",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "mongodb": "757e29753346cf86",
+        "name": "Find All Rooms",
+        "collection": "config_system",
+        "operation": "aggregate",
+        "x": 620,
+        "y": 2720,
+        "wires": [
+            [
+                "8f67993a407034d3"
+            ]
+        ]
+    },
+    {
+        "id": "8f67993a407034d3",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Rooms_list",
+        "func": "msg.rooms_list = msg.payload[0].rooms_list || []\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 2720,
+        "wires": [
+            [
+                "ab59ee96896ae5fc"
+            ]
+        ]
+    },
+    {
+        "id": "be5d36b3476d26d5",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Mecanism Brain Trigger KMS",
+        "mode": "link",
+        "links": [
+            "b6a9d656cbb4919a"
+        ],
+        "x": 1135,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "7b1bd4699a9aa4c2",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Config ESP On Load",
+        "links": [
+            "4dc8c4eea519145c",
+            "9fec1ffe15dc769c"
+        ],
+        "x": 135,
+        "y": 520,
+        "wires": [
+            [
+                "f57795686e7d9b3a"
+            ]
+        ]
+    },
+    {
+        "id": "ccd409f741f59f9a",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "960522989b588546",
+        "name": "Mecanism Brain Trigger ESP",
+        "mode": "link",
+        "links": [
+            "a940de6329a7866c"
+        ],
+        "x": 1135,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "1d0a455685ed4e43",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "tab": "dc188a9f51ec7e5f",
+        "name": "Title Automates et Annexes",
+        "order": 2,
+        "width": 12,
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML\n// =========================================================================\n-->\n<div style=\"text-align:center\">\n    <h2 id=\"main_title_config\" class=\"adaptative-text-big\">\n        Automates et Autres Composants\n    </h2>\n    <!-- BALISE SENTINELLE : S'affiche au chargement et est vidée dès que la base répond -->\n    <span id=\"loading_status\"><i>Chargement en cours...</i></span>\n</div>\n\n<script>\n\n// =========================================================================\n// 2. SCRIPT : RECEPTION DYNAMIQUE ET INJECTION DU TITRE D'ONGLET DUO\n// =========================================================================\n    $node.on(\"update-value\", function(evt, data) {\n        var title = data.msg.payload; // Reçoit le nom global de l'application (ex: \"TRIXIE\")\n        if (!title) return;\n\n        if (data.msg.topic === \"load_escape_details\") {\n            var statusElem = document.querySelector(\"#loading_status\");\n            if (statusElem) {\n                statusElem.textContent = \"\";\n            }\n            \n            // Étape A : On extrait le texte de la balise h2 de cette page (ex: \"Configuration de la salle\")\n            var pageTitleElem = document.querySelector(\"#main_title_config\");\n            var pageTitle = pageTitleElem ? pageTitleElem.textContent.trim() : \"\";\n\n            // Étape B : On assemble dynamiquement le titre de l'application et de la page pour l'onglet\n            document.title = title + \" : \" + pageTitle;\n            \n            var logo = document.querySelector(\".logo-name\");\n            if (logo) logo.textContent = title;\n\n            var oldMeta = document.querySelector('meta[name=\"apple-mobile-web-app-title\"]');\n            if (oldMeta) oldMeta.remove();\n\n            document.head.insertAdjacentHTML('beforeend', '<meta name=\"apple-mobile-web-app-title\" content=\"' + title + '\">');\n\n            var breadcrumb = document.querySelector(\"div[aria-label*='breadcrumb']\");\n            if (breadcrumb) breadcrumb.style.display = \"none\";\n        }\n    });\n\n// =========================================================================\n// 3. SECURITE : TIMEOUT ANTI-VEILLE SUR LE SOUSTITRE DE CHARGEMENT\n// =========================================================================\n    // Déclenchement du flux asynchrone au chargement initial\n    setTimeout(function() {\n        $node.trigger('send', { topic: 'load_escape_details', payload: {} });\n    }, 50);\n\n    // Contrôle de sécurité calé sur 1500ms pour ton Raspberry Pi\n    setTimeout(function() {\n        var statusElem = document.querySelector(\"#loading_status\");\n        if (statusElem && statusElem.innerText.indexOf(\"Chargement en cours...\") !== -1) {\n            window.location.reload();\n        }\n    }, 1500);\n</script>\n\n<style>\n    // =========================================================================\n    // 4. STYLE CSS : CONFIGURATION DESIGN DE L'INTERFACE DE JEU (INTACTE)\n    // =========================================================================\n\n    .no_margin_bottom {\n        margin-bottom: 0;\n    }\n\n    .magic_input {\n        border: none;\n        border-bottom: 1px solid grey;\n    }\n\n    input:checked+.slider {\n        background-color: #dc3545;\n    }\n\n    input:focus+.slider {\n        box-shadow: 0 0 1px #2196F3;\n    }\n\n    input:checked+.slider:before {\n        -webkit-transform: translateX(20px);\n        -ms-transform: translateX(20px);\n        transform: translateX(20px);\n    }\n\n    td {\n        padding-top: 2px !important;\n        padding-bottom: 2px !important;\n        vertical-align: middle;\n    }\n\n    td,\n    tr,\n    th {\n        border: 1px solid black;\n        border-collapse: collapse;\n        border-spacing: 0;\n    }\n\n    .dragline {\n        cursor: all-scroll;\n    }\n\n    table {\n        width: 100%;\n        -webkit-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n    }\n\n    .center {\n        text-align: center;\n    }\n\n    .modal {\n        text-align: center;\n        display: none;\n        position: fixed;\n        opacity: 0.99;\n        z-index: 100;\n        padding-top: 15%;\n        left: 0;\n        top: 0;\n        width: 100%;\n        height: 100%;\n        overflow: auto;\n    }\n\n    .modal-content {\n        position: relative;\n        background-color: #fefefe;\n        margin: auto;\n        padding: 0;\n        border: 1px solid #888;\n        width: 50%;\n        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n        -webkit-animation: none !important;\n        animation: none !important;\n    }\n\n    .modal-header {\n        padding: 10px 16px;\n        background-color: #dc3545;\n        color: white;\n    }\n\n    .modal-body {\n        padding: 20px 16px;\n        font-size: 1.1em;\n    }\n\n    .modal-footer {\n        padding: 10px 16px;\n        background-color: #f8f9fa;\n        border-top: 1px solid #dee2e6;\n        color: #333;\n    }\n\n    .fullDiv {\n        height: 100%;\n        width: 100%;\n        background: transparent;\n        border: none;\n        color: inherit;\n    }\n\n    input::placeholder {\n        color: red !important;\n    }\n\n    .switch {\n        width: 44px !important;\n        height: 22px !important;\n        border-radius: 50px !important;\n        position: relative !important;\n        cursor: pointer !important;\n        transition: all 0.3s ease !important;\n        padding: 0 !important;\n        border: none !important;\n    }\n    \n    .switchcircle {\n        width: 16px !important;\n        height: 16px !important;\n        background-color: #ffffff !important;\n        border-radius: 50px !important;\n        position: absolute !important;\n        top: 3px !important;\n        left: 3px !important;\n        transition: transform 0.3s ease !important;\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "hide",
+        "x": 480,
+        "y": 60,
+        "wires": [
+            [
+                "4dc8c4eea519145c"
+            ]
+        ]
+    },
+    {
+        "id": "4dc8c4eea519145c",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "name": "Title Automates et Annexes On Load",
+        "mode": "link",
+        "links": [
+            "820362682b9f120b",
+            "ef73873ea656384c",
+            "7b1bd4699a9aa4c2",
+            "92d2ab44512f24ee",
+            "38a0af61b4653ab7",
+            "a1c09c1b87ce3a1d"
+        ],
+        "x": 655,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c9e89e82ad2dbba6",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Load MCP Channels",
+        "x": 640,
+        "y": 160,
+        "wires": [
+            [
+                "7deebc27286df1e0"
+            ]
+        ]
+    },
+    {
+        "id": "7deebc27286df1e0",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "Format MCP Update",
+        "func": "// LE RÉSULTAT DE L'AGRÉGATION ARRIVE SOUS FORME DE TABLEAU DANS MSG.PAYLOAD\nvar results = msg.payload || [];\nvar doc = results[0] || {};\n\n// INITIALISATION SÉCURISÉE DE L'OBJET MCP23017 S'IL EST ABSENT\nif (!doc.MCP23017) {\n    doc.MCP23017 = {};\n}\n\nvar usedMcp = doc.used_mcp || [];\nvar updateFields = {};\n\n// =========================================================================\n// 1. GÉNÉRATION DES ÉTATS ET MISE À JOUR CONCURRENTE (BASE & VARIABLE GLOBALE)\n// =========================================================================\nfor (var i = 32; i < 40; i++) {\n    var mcpName = \"mcp\" + i;\n    // VÉRIFIE SI LE NOM DU MCP EST PRÉSENT DANS LE TABLEAU ÉPURÉ PAR MONGODB\n    var isUsed = usedMcp.indexOf(mcpName) !== -1;\n\n    // A. PRÉPARATION DE LA REQUÊTE POUR LA BASE DE DONNÉES\n    updateFields[\"MCP23017.\" + mcpName + \".inuse\"] = isUsed;\n\n    // B. INITIALISATION DU SOUS-OBJET DANS LE DOCUMENT SI INEXISTANT\n    if (!doc.MCP23017[mcpName]) {\n        doc.MCP23017[mcpName] = {};\n    }\n    // C. MISE À JOUR EN DIRECT DE L'OBJET LOCAL POUR LA MÉMOIRE GLOBALE\n    doc.MCP23017[mcpName].inuse = isUsed;\n}\n\n// =========================================================================\n// 2. SAUVEGARDE EN MÉMOIRE GLOBALE DE L'OBJET MCP23017 DÉSORMAIS À JOUR\n// =========================================================================\nglobal.set(\"Memory.MCP\", doc.MCP23017);\n\n// =========================================================================\n// 3. PRÉPARATION DES ARGUMENTS POUR LA MISE À JOUR GLOBALE UNIFIÉE MONGODB\n// =========================================================================\nvar query = { \"_id\": \"init\" };\nvar update = { \"$set\": updateFields };\nvar options = { \"upsert\": true };\n\nmsg.operation = \"updateOne\";\nmsg.payload = [query, update, options];\n\ndelete msg.topic;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 160,
+        "wires": [
+            [
+                "13d5f6c7024c7a5c"
+            ]
+        ]
+    },
+    {
+        "id": "13d5f6c7024c7a5c",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Save MCP Config",
+        "x": 1070,
+        "y": 160,
+        "wires": [
+            [
+                "bb52f7f6a3edaedc"
+            ]
+        ]
+    },
+    {
+        "id": "bb52f7f6a3edaedc",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "Get MCP datas",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR FILTRER LES DONNÉES\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRAIRE UNIQUEMENT L'OBJET MCP23017 À LA RACINE\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$MCP23017\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_MCP_datas\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "a16ce7d4a8f75c60"
+            ]
+        ]
+    },
+    {
+        "id": "a16ce7d4a8f75c60",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Load MCP Datas",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "73945f3bdf8d2ffa"
+            ]
+        ]
+    },
+    {
+        "id": "cc50b349910c0a77",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "Set id & Sync Memory",
+        "func": "// =========================================================================\n// 1. INITIALISATION DE LA MÉMOIRE GLOBALE SI ABSENTE\n// =========================================================================\nvar currentMemory = global.get(\"Memory.MCP\") || {};\nvar updateFields = {};\n\n// SÉCURISATION PRÉALABLE CONTRE LES PAQUETS MAL FORMÉS\nif (!msg.payload) return null;\n\n// =========================================================================\n// 2. LOGIQUE DE FILTRAGE DES ENVOIS SELON LE TYPE DE MESSAGE RÉCEPTÉ\n// =========================================================================\nif (msg.payload.mcp === undefined) {\n    // CAS A : MODIFICATION DE L'INTERRUPTEUR GÉNÉRAL\n    updateFields[\"MCP23017.mcp_enabled\"] = msg.payload.enabled;\n    currentMemory.mcp_enabled = msg.payload.enabled;\n} else {\n    // CAS B : MODIFICATION D'UNE LIGNE SPÉCIFIQUE DE MCP (32 À 39)\n    var key = msg.payload.mcp;\n    \n    // CIBLAGE ET MODIFICATION DES CLÉS INDIVIDUELLES EN BASE POUR PROTÉGER INUSE\n    updateFields[\"MCP23017.\" + key + \".enabled\"] = msg.payload.enabled;\n    updateFields[\"MCP23017.\" + key + \".value_A\"] = msg.payload.value_A;\n    updateFields[\"MCP23017.\" + key + \".value_B\"] = msg.payload.value_B;\n    \n    // SYNCHRONISATION DE L'OBJET EN MÉMOIRE GLOBALE SANS TOUCHER À INUSE\n    if (!currentMemory[key]) {\n        currentMemory[key] = {};\n    }\n    currentMemory[key].enabled = msg.payload.enabled;\n    currentMemory[key].value_A = msg.payload.value_A;\n    currentMemory[key].value_B = msg.payload.value_B;\n}\n\n// =========================================================================\n// 3. ENREGISTREMENT EN VARIABLE GLOBALE ET PRÉPARATION MONGODB4 (1 SORTIE)\n// =========================================================================\nglobal.set(\"Memory.MCP\", currentMemory);\n\nvar query = { \"_id\": \"init\" };\nvar update = { \"$set\": updateFields };\nvar options = { \"upsert\": true };\n\nmsg.operation = \"updateOne\";\nmsg.payload = [query, update, options];\n\ndelete msg.topic;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 240,
+        "wires": [
+            [
+                "5419384ac622bbd8"
+            ]
+        ]
+    },
+    {
+        "id": "5419384ac622bbd8",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update MCP Database",
+        "x": 870,
+        "y": 240,
+        "wires": [
+            [
+                "218c8b56a704e978"
+            ]
+        ]
+    },
+    {
+        "id": "218c8b56a704e978",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "MCP Valid Action",
+        "mode": "link",
+        "links": [
+            "820362682b9f120b"
+        ],
+        "x": 1145,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "98695b2e18c5fb08",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "6e88bdd47ea6cc28"
+            ]
+        ]
+    },
+    {
+        "id": "0ccd09c97c18c9f5",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Load KMS Channels",
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "9a9ff589fda6b5b6"
+            ]
+        ]
+    },
+    {
+        "id": "9a9ff589fda6b5b6",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "Format KMS Update",
+        "func": "// LE RÉSULTAT DE L'AGRÉGATION REÇU EN ENTRÉE CONTIENT LA LISTE DES KMS UTILISÉS\nvar results = msg.payload || [];\nvar doc = results[0] || {};\nvar usedKms = doc.used_kms || [];\n\n// =========================================================================\n// 1. CONFIGURATION DE L'OPÉRATION UPDATEONE VIA PIPELINE NATIF MONGODB 4\n// =========================================================================\nmsg.operation = \"updateOne\";\n\n// FILTRE DE RECHERCHE DU DOCUMENT UNIQUE\nvar query = { \"_id\": \"init\" };\n\n// PIPELINE DE MISE À JOUR : APPLIQUE LA LOGIQUE SUR CHAQUE ÉLÉMENT DU TABLEAU EN BASE\nvar updatePipeline = [\n    {\n        \"$set\": {\n            \"KMS868.devices\": {\n                \"$map\": {\n                    \"input\": { \"$ifNull\": [\"$KMS868.devices\", []] },\n                    \"as\": \"card\",\n                    \"in\": {\n                        \"$mergeObjects\": [\n                            \"$$card\",\n                            {\n                                \"inuse\": {\n                                    \"$in\": [\"$$card._id\", usedKms]\n                                }\n                            }\n                        ]\n                    }\n                }\n            }\n        }\n    }\n];\n\nvar options = { \"upsert\": true };\n\n// ENCAPSULATION POUR LE DRIVER MONGODB4 V3.4.0\nmsg.payload = [query, updatePipeline, options];\n\ndelete msg.topic;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 340,
+        "wires": [
+            [
+                "69953e1431ed06e5"
+            ]
+        ]
+    },
+    {
+        "id": "69953e1431ed06e5",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Save KMS Config",
+        "x": 1070,
+        "y": 340,
+        "wires": [
+            [
+                "81198e5adab4daa5"
+            ]
+        ]
+    },
+    {
+        "id": "81198e5adab4daa5",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "Get KMS Datas",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR L'AFFICHAGE DE L'IHM\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRAIRE UNIQUEMENT L'OBJET KMS868 À LA RACINE DU MESSAGE\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$KMS868\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_kms868s_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "4b2cb82f1f1e41b2"
+            ]
+        ]
+    },
+    {
+        "id": "4b2cb82f1f1e41b2",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Find All Kms868",
+        "x": 620,
+        "y": 380,
+        "wires": [
+            [
+                "14f63ea806cf97f1"
+            ]
+        ]
+    },
+    {
+        "id": "26d358dfdef6a9c7",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update KMS Database",
+        "x": 1010,
+        "y": 400,
+        "wires": [
+            [
+                "1d66396b7bd1131a"
+            ]
+        ]
+    },
+    {
+        "id": "1d66396b7bd1131a",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "KMS Valid Action",
+        "mode": "link",
+        "links": [
+            "ef73873ea656384c"
+        ],
+        "x": 1145,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f57795686e7d9b3a",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "b9c9ecfe677a9315"
+            ]
+        ]
+    },
+    {
+        "id": "b9c9ecfe677a9315",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Get ESP List",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ ET FILTRÉ POUR LES APPAREILS ESP\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : FILTRER CHAQUE TABLEAU SUR SYSTEM:'ESP' ET N'EXTRAIRE QUE LES ID DE CARTE\n    {\n        \"$project\": {\n            \"used_esp\": {\n                \"$setUnion\": [\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$inputs\", []] },\n                                    \"as\": \"inp\",\n                                    \"cond\": { \"$eq\": [\"$$inp.system\", \"ESP\"] }\n                                }\n                            },\n                            \"as\": \"item_inp\",\n                            \"in\": \"$$item_inp.device\"\n                        }\n                    },\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$outputs\", []] },\n                                    \"as\": \"out\",\n                                    \"cond\": { \"$eq\": [\"$$out.system\", \"ESP\"] }\n                                }\n                            },\n                            \"as\": \"item_out\",\n                            \"in\": \"$$item_out.device\"\n                        }\n                    }\n                ]\n            }\n        }\n    },\n\n    // ÉTAPE C : NETTOYER LA RACINE POUR NE CONSERVER QUE LA LISTE DES ESP UTILISÉS\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": {\n                \"used_esp\": \"$used_esp\"\n            }\n        }\n    }\n];\n\nvar options = {};\n\n// ENCAPSULATION STRICTE REQUISE POUR LE DRIVER MONGODB4 V3.4.0\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_ESP_datas\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 520,
+        "wires": [
+            [
+                "0ccd09c97c18c9f6"
+            ]
+        ]
+    },
+    {
+        "id": "0ccd09c97c18c9f6",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Load ESP Channels",
+        "x": 640,
+        "y": 520,
+        "wires": [
+            [
+                "9a9ff589fda6b5b7"
+            ]
+        ]
+    },
+    {
+        "id": "9a9ff589fda6b5b7",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Format ESP Update",
+        "func": "// LE RÉSULTAT DE L'AGRÉGATION REÇU EN ENTRÉE CONTIENT LA LISTE DES ESP UTILISÉS\nvar results = msg.payload || [];\nvar doc = results[0] || {};\nvar usedEsp = doc.used_esp || [];\n\n// =========================================================================\n// 1. CONFIGURATION DE L'OPÉRATION UPDATEONE VIA PIPELINE NATIF MONGODB 4\n// =========================================================================\nmsg.operation = \"updateOne\";\n\n// FILTRE DE RECHERCHE DU DOCUMENT UNIQUE\nvar query = { \"_id\": \"init\" };\n\n// PIPELINE DE MISE À JOUR : APPLIQUE LA LOGIQUE SUR CHAQUE ÉLÉMENT DU TABLEAU EN BASE\nvar updatePipeline = [\n    {\n        \"$set\": {\n            \"ESP32.devices\": {\n                \"$map\": {\n                    \"input\": { \"$ifNull\": [\"$ESP32.devices\", []] },\n                    \"as\": \"card\",\n                    \"in\": {\n                        \"$mergeObjects\": [\n                            \"$$card\",\n                            {\n                                \"inuse\": {\n                                    \"$in\": [\"$$card._id\", usedEsp]\n                                }\n                            }\n                        ]\n                    }\n                }\n            }\n        }\n    }\n];\n\nvar options = { \"upsert\": true };\n\n// ENCAPSULATION POUR LE DRIVER MONGODB4 V3.4.0\nmsg.payload = [query, updatePipeline, options];\n\ndelete msg.topic;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 520,
+        "wires": [
+            [
+                "69953e1431ed06e6"
+            ]
+        ]
+    },
+    {
+        "id": "69953e1431ed06e6",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Save ESP Config",
+        "x": 1070,
+        "y": 520,
+        "wires": [
+            [
+                "81198e5adab4daa6"
+            ]
+        ]
+    },
+    {
+        "id": "6e88bdd47ea6cc28",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "Get KMS List",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ ET FILTRÉ POUR LES APPAREILS KMS\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : FILTRER CHAQUE TABLEAU SUR SYSTEM:'KMS' ET N'EXTRAIRE QUE LES ID DE CARTE\n    {\n        \"$project\": {\n            \"used_kms\": {\n                \"$setUnion\": [\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$inputs\", []] },\n                                    \"as\": \"inp\",\n                                    \"cond\": { \"$eq\": [\"$$inp.system\", \"KMS\"] }\n                                }\n                            },\n                            \"as\": \"item_inp\",\n                            \"in\": \"$$item_inp.device\"\n                        }\n                    },\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$outputs\", []] },\n                                    \"as\": \"out\",\n                                    \"cond\": { \"$eq\": [\"$$out.system\", \"KMS\"] }\n                                }\n                            },\n                            \"as\": \"item_out\",\n                            \"in\": \"$$item_out.device\"\n                        }\n                    }\n                ]\n            }\n        }\n    },\n\n    // ÉTAPE C : NETTOYER LA RACINE POUR NE CONSERVER QUE LA LISTE DES KMS UTILISÉS\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": {\n                \"used_kms\": \"$used_kms\"\n            }\n        }\n    }\n];\n\nvar options = {};\n\n// ENCAPSULATION STRICTE REQUISE POUR LE DRIVER MONGODB4 V3.4.0\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_KMS_datas\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "0ccd09c97c18c9f5"
+            ]
+        ]
+    },
+    {
+        "id": "79e6374850fb14c1",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "82be80a955b1b416",
+        "name": "Get MCP List",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ ET FILTRÉ POUR LES APPAREILS MCP\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : FILTRER CHAQUE TABLEAU SUR SYSTEM:'MCP' ET N'EXTRAIRE QUE LES ID DE CARTE\n    {\n        \"$project\": {\n            \"used_mcp\": {\n                \"$setUnion\": [\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$inputs\", []] },\n                                    \"as\": \"inp\",\n                                    \"cond\": { \"$eq\": [\"$$inp.system\", \"MCP\"] }\n                                }\n                            },\n                            \"as\": \"item_inp\",\n                            \"in\": \"$$item_inp.device\"\n                        }\n                    },\n                    {\n                        \"$map\": {\n                            \"input\": {\n                                \"$filter\": {\n                                    \"input\": { \"$ifNull\": [\"$outputs\", []] },\n                                    \"as\": \"out\",\n                                    \"cond\": { \"$eq\": [\"$$out.system\", \"MCP\"] }\n                                }\n                            },\n                            \"as\": \"item_out\",\n                            \"in\": \"$$item_out.device\"\n                        }\n                    }\n                ]\n            }\n        }\n    },\n\n    // ÉTAPE C : NETTOYER LA RACINE POUR NE CONSERVER QUE LA LISTE DES MCP UTILISÉS\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": {\n                \"used_mcp\": \"$used_mcp\"\n            }\n        }\n    }\n];\n\nvar options = {};\n\n// ENCAPSULATION STRICTE POUR NODE-RED-CONTRIB-MONGODB4 V3.4.0\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_MCP_datas\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "c9e89e82ad2dbba6"
+            ]
+        ]
+    },
+    {
+        "id": "81198e5adab4daa6",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Get ESP Datas",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR L'DISPLAY DE L'IHM ESP32\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRAIRE UNIQUEMENT L'OBJET ESP32 À LA RACINE DU MESSAGE\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$ESP32\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_esp32s_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "4b2cb82f1f1e41b3"
+            ]
+        ]
+    },
+    {
+        "id": "4b2cb82f1f1e41b3",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Find All ESP32",
+        "x": 620,
+        "y": 560,
+        "wires": [
+            [
+                "e9de069fff1e1a1d"
+            ]
+        ]
+    },
+    {
+        "id": "e9de069fff1e1a1d",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "tab": "7d7fae418ec6ebd9",
+        "name": "ESP32",
+        "order": 4,
+        "width": 12,
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML ET FORMULAIRE DES MODULES ESP32\n// =========================================================================\n-->\n<h3 style=\"text-align:center;\">Liste des modules ESP</h3>\n\n<div style=\"display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 15px; margin-bottom: 20px;\">\n    <span style=\"font-size: 1rem; font-weight: bold; text-decoration: underline;\">ACTIVER</span>\n\n    <!-- ANCHOR : STRUCTURE DE BOÎTES DE VOTRE V3 DU KEYPAD POUR LE COMMUTATEUR ESP -->\n    <div id=\"esp_enabled_bg\" onclick=\"toggleEspEnabledPill()\" class=\"btn btn-dark switch\" id=\"global_esp_switch_wrapper\">\n        <div id=\"esp_enabled_circle\" class=\"switchcircle\"></div>\n    </div>\n</div>\n\n<table id=\"esp32s_list\" class=\"table-striped table-sm\">\n    <thead>\n        <tr class=\"table-dark\">\n            <th class=\"center\" style=\"width:5%\">#</th>\n            <th class=\"center\" style=\"width:30%\">Identifiant du module</th>\n            <th class=\"center\" style=\"width:15%\">Entrées</th>\n            <th class=\"center\" style=\"width:15%\">Sorties</th>\n            <th class=\"center\" style=\"width:15%\">RFID</th>\n            <th class=\"center\" style=\"width:20%\">Actions</th>\n        </tr>\n    </thead>\n    <tbody>\n        <!-- l'injection dynamique des tr s'effectue exclusivement dans ce corps étanche -->\n    </tbody>\n</table>\n\n<!-- MODALE SYSTEME -->\n<div id=\"esp32s_list_modal\" class=\"modal\">\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h2 id=\"esp32s_list_modal_title\" style=\"margin: auto;\"></h2>\n        </div>\n        <div class=\"modal-body\" style=\"text-align: center;\">\n            <p id=\"esp32s_list_modal_info\"></p>\n            <p id=\"esp32s_list_modal_question\">Voulez-vous continuer ?</p>\n        </div>\n        <div class=\"modal-footer\" id=\"esp_modal_buttons_container\">\n            <div class=\"d-grid gap-2 col-12 mx-auto\">\n                <button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"esp32sListModalValidate()\">Valider</button>\n                <button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"esp32sListModalCancelled()\">Annuler</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n// =========================================================================\n// 2. RECEPTION : EXTRACTION VANILLA JS ET RENDU DYNAMIQUE DES LIGNES\n// =========================================================================\n    var messageEsp32s;\n    var esp32s_list_modal = document.querySelector('#esp32s_list_modal');\n\n    // REGISTRES BOOLÉENS SÉCURISÉS POUR SIMULER LES INPUTS EN JAVASCRIPT PUR\n    var isEspGlobalEnabled = false;\n    var isEspGlobalLocked = false;\n\n    $node.on(\"update-value\", function(evt, data) {\n        if (data && data.msg && data.msg.topic === \"load_esp32s_list\") {\n            var payload = (data.msg && Array.isArray(data.msg.payload)) ? data.msg.payload[0] : null;\n            if (!payload) return;\n\n            var tbody = document.querySelector('#esp32s_list tbody');\n            if (tbody) tbody.innerHTML = ''; // PURGE INSTANTANÉE EN UNE LIGNE DU CORPS UNIQUEMENT SANS APPEL DE FONCTION EXTERNE MORT\n            \n            // chargement synchrone de la variable de trajet de base de données\n            isEspGlobalEnabled = !!payload.esp_enabled;\n            refreshEspGlobalVisual();\n\n            var dat = payload.devices || [];\n            var index = 0;\n            var isAnyEspInUse = false;\n\n            if (tbody) {\n                dat.forEach(function(obj) {\n                    if (!obj) return;\n                    index++;\n                    if (obj.inuse) {\n                        isAnyEspInUse = true;\n                    }\n\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('id', obj._id);\n                    \n                    var dataInUseAttr = obj.inuse ? 'data-inuse=\"true\"' : 'data-inuse=\"false\"';\n                    var titleAlert = obj.inuse ? 'title=\"Ce module est associé à un mécanisme actif et ne peut pas être supprimé\"' : '';\n\n                    tr.innerHTML =\n                        '<td name=\"number\" class=\"center\">' + index + '</td>' +\n                        '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" value=\"' + (obj.device || '') + '\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_input\" class=\"fullDiv center\" value=\"' + (obj.number_input || '0') + '\" autocomplete=\"off\" placeholder=\"Nombre d\\'entrées\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_output\" class=\"fullDiv center\" value=\"' + (obj.number_output || '0') + '\" autocomplete=\"off\" placeholder=\"Nombre de sorties\"></input></td>' +\n                        '<td class=\"center\"><input name=\"number_rfid\" class=\"fullDiv center\" value=\"' + (obj.number_rfid || '0') + '\" autocomplete=\"off\" placeholder=\"Nombre de RFID\"></input></td>' +\n                        '<td class=\"center\">' +\n                        '<div class=\"d-flex justify-content-center gap-1\">' +\n                        '<button class=\"btn btn-dark\" onclick=\"saveEsp32(this, \\'' + obj._id + '\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                        '<button class=\"btn btn-danger\" ' + titleAlert + ' ' + dataInUseAttr + ' onclick=\"deleteEsp32(\\'' + obj._id + '\\', this)\"><i class=\"nav-hdr-btn ti-trash fa-lg\"></i></button>' +\n                        '</div>' +\n                        '</td>';\n                    tbody.appendChild(tr);\n                });\n            }\n\n            // gestion des classes de sécurité matérielle sur le wrapper et le commutateur\n            var wrapper = document.querySelector('#global_esp_switch_wrapper');\n            var globalBg = document.querySelector('#esp_enabled_bg');\n            \n            if (isAnyEspInUse) {\n                isEspGlobalLocked = true;\n                if (globalBg) globalBg.classList.add('pe-none', 'opacity-50');\n                if (wrapper) wrapper.setAttribute('title', 'Modification impossible : un ou plusieurs modules ESP sont requis par le scénario matériel');\n            } else {\n                isEspGlobalLocked = false;\n                if (globalBg) globalBg.classList.remove('pe-none', 'opacity-50');\n                if (wrapper) wrapper.removeAttribute('title');\n            }\n// CRÉATION DE LA LIGNE D'AJOUT EN BAS DU TABLEAU AVEC APPEL DE SAUVEGARDE UNIFIÉ\n            var trNew = document.createElement('tr');\n            trNew.setAttribute('id', \"newAction\");\n            trNew.innerHTML =\n                '<td name=\"number\" class=\"center\">' + (index + 1) + '</td>' +\n                '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n                '<td class=\"center\"><input name=\"number_input\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre d\\'entrées\"></input></td>' +\n                '<td class=\"center\"><input name=\"number_output\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre de sorties\"></input></td>' +\n                '<td class=\"center\"><input name=\"number_rfid\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nombre de RFID\"></input></td>' +\n                '<td class=\"center\">' +\n                '<div class=\"d-flex justify-content-center gap-1\">' +\n                '<button class=\"btn btn-dark\" onclick=\"saveEsp32(this, \\'new\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                '<button class=\"btn btn-warning\" onclick=\"cancelAddEsp32()\"><i class=\"nav-hdr-btn ti-reload fa-lg\"></i></button>' +\n                '</div>' +\n                '</td>';\n            if (tbody) tbody.appendChild(trNew);\n        }\n    });\n\n// FONCTION DE RAFRAÎCHISSEMENT VISUEL EXCLUSIVE DU COMMUTATEUR GÉNÉRAL ESP V3\n    function refreshEspGlobalVisual() {\n        var bg = document.querySelector('#esp_enabled_bg');\n        var circle = document.querySelector('#esp_enabled_circle');\n        if (!bg || !circle) return;\n\n        if (isEspGlobalEnabled) {\n            bg.classList.remove('btn-dark');\n            bg.classList.add('btn-danger');\n            circle.style.transform = \"translateX(22px)\";\n        } else {\n            bg.classList.remove('btn-danger');\n            bg.classList.add('btn-dark');\n            circle.style.transform = \"translateX(0px)\";\n        }\n    }\n\n// =========================================================================\n// 3. ACTIONS : TRANSMISSION DES COMMANDES ET MODALES AU SERVEUR NODE-RED\n// =========================================================================\n    // interception de l'action de clic sur le commutateur général esp simulé\n    function toggleEspEnabledPill() {\n        if (isEspGlobalLocked) return;\n\n        isEspGlobalEnabled = !isEspGlobalEnabled;\n        refreshEspGlobalVisual();\n\n        var msg = {\n            \"topic\": \"enabled_esp_config\",\n            \"payload\": {\n                \"enabled\": isEspGlobalEnabled\n            }\n        };\n        $node.trigger('send', msg);\n    } \n\n    // function unique d'ajout et d'edition ultra-reduite via chainage optionnel ?.\n    function saveEsp32(element, id) {\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        var msg = {\n            \"topic\": \"save_esp32\",\n            \"payload\": {\n                \"_id\": id,\n                \"device\": row.querySelector('[name=\"device\"]')?.value || \"\",\n                \"number_input\": row.querySelector('[name=\"number_input\"]')?.value || \"0\",\n                \"number_output\": row.querySelector('[name=\"number_output\"]')?.value || \"0\",\n                \"number_rfid\": row.querySelector('[name=\"number_rfid\"]')?.value || \"0\"\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    function deleteEsp32(id, element) {\n        var modalTitle = document.querySelector('#esp32s_list_modal_title');\n        var modalInfo = document.querySelector('#esp32s_list_modal_info');\n        var modalQuestion = document.querySelector('#esp32s_list_modal_question');\n        var buttonsContainer = document.querySelector('#esp_modal_buttons_container');\n        \n        if (esp32s_list_modal) {\n            esp32s_list_modal.style.display = \"block\";\n        }\n\n        var row = element.closest(\"tr\");\n        var deviceId = row?.querySelector('[name=\"device\"]')?.value || \"\";\n\n        var isInUse = element.getAttribute('data-inuse') === \"true\";\n\n        if (isInUse) {\n            if (modalTitle) modalTitle.innerHTML = \"ACTION IMPOSSIBLE\";\n            if (modalInfo) modalInfo.innerHTML = \"Suppression impossible : ce module est relie a des mecanismes actifs.\";\n            if (modalQuestion) modalQuestion.style.display = \"none\";\n            \n            if (buttonsContainer) {\n                buttonsContainer.innerHTML = '<div class=\"d-grid gap-2 col-12 mx-auto\"><button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"esp32sListModalCancelled()\">Fermer</button></div>';\n            }\n            messageEsp32s = null;\n        } else {\n            if (modalTitle) modalTitle.innerHTML = \"MISE EN GARDE\";\n            if (modalInfo) modalInfo.innerHTML = \"Cette action est irréversible. L\\'ESP sera définitivement supprimé...\";\n            if (modalQuestion) modalQuestion.style.display = \"block\";\n            \n            if (buttonsContainer) {\n                buttonsContainer.innerHTML = \n                    '<div class=\"d-grid gap-2 col-12 mx-auto\">' +\n                        '<button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"esp32sListModalValidate()\">Valider</button>' +\n                        '<button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"esp32sListModalCancelled()\">Annuler</button>' +\n                    '</div>';\n            }\n            \n            messageEsp32s = {\n                \"topic\": \"delete_esp32\",\n                \"payload\": {\n                    \"_id\" : id,\n                    \"device\": deviceId\n                }\n            };\n        }\n    }\n\n    function cancelAddEsp32() {\n        $node.trigger('send', { \"topic\": \"reload_esp32\", \"payload\": {} });\n    }\n        \n    function esp32sListModalValidate() {\n        if (messageEsp32s && esp32s_list_modal) {\n            $node.trigger('send', messageEsp32s);\n            esp32s_list_modal.style.display = \"none\";\n        }\n    }\n\n    function esp32sListModalCancelled() {\n        if (esp32s_list_modal) {\n            esp32s_list_modal.style.display = \"none\";\n        }\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "84b76976f1d09962"
+            ]
+        ]
+    },
+    {
+        "id": "da7e418985799f63",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "name": "Process KMS Actions",
+        "func": "// SÉCURISATION PRÉALABLE CONTRE LES PAQUETS VIDES OU MAL FORMÉS\nif (!msg || !msg.topic) return null;\n\n// =========================================================================\n// 1. CAS RELOAD_KMS868 : LE SIGNAL COURT-CIRCUITE LA BASE ET SORT SUR LA SORTIE 2\n// =========================================================================\nif (msg.topic === \"reload_kms868\") {\n    var msgDirectRefresh = { \"topic\": \"load_kms868s_list\", \"payload\": {} };\n    return [null, msgDirectRefresh];\n}\n\n// =========================================================================\n// 2. CAS SAVE_KMS868 : ROUTAGE UNIQUE UNIFIÉ ET ADAPTATION CHIRURGICALE\n// =========================================================================\nif (msg.topic === \"save_kms868\") {\n    var data = msg.payload || {};\n    var queryKms = {};\n    var saveKms = {};\n\n    // centralisation et factorisation des champs pour eviter la duplication de code\n    var kmsObj = {\n        \"name\": data.name || \"\",\n        \"device\": data.device || \"\"\n    };\n\n    // si la platine kms est nouvelle (injection de l'id msg._msgid via push)\n    if (data._id === \"new\") {\n        queryKms = { \"_id\": \"init\" };\n        saveKms = {\n            \"$push\": {\n                \"KMS868.devices\": Object.assign({ \"_id\": msg._msgid }, kmsObj)\n            }\n        };\n    }\n    // si la platine kms existe deja (filtrage de l'id et mise a jour globale via set positionnel)\n    else {\n        queryKms = {\n            \"_id\": \"init\",\n            \"KMS868.devices._id\": data._id\n        };\n        saveKms = {\n            \"$set\": {\n                \"KMS868.devices.$\": Object.assign({ \"_id\": data._id }, kmsObj)\n            }\n        };\n    }\n\n    // formatage strict [query, update, options] pour le driver mongodb4\n    msg.payload = [queryKms, saveKms, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\n// =========================================================================\n// 3. CAS DELETE_KMS868 : PURGE DE LA RAM ET SUPPRESSION EN BASE DE DONNÉES\n// =========================================================================\nif (msg.topic === \"delete_kms868\") {\n    // sécurité matérielle : purge nette de la variable globale en ram avant la suppression\n    if (msg.payload && msg.payload.device) {\n        global.set(\"Memory.KMS868.\" + msg.payload.device, undefined);\n    }\n\n    var queryDel = { \"_id\": \"init\" };\n    var updateDel = {\n        \"$pull\": {\n            \"KMS868.devices\": {\n                \"_id\": msg.payload._id\n            }\n        }\n    };\n\n    msg.payload = [queryDel, updateDel, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\n// =========================================================================\n// 4. CAS ENABLED_KMS_CONFIG : ACTIVATION CHIRURGICALE DU COMMUTATEUR GENERAL\n// =========================================================================\nif (msg.topic === \"enabled_kms_config\") {\n    var queryEnable = { \"_id\": \"init\" };\n    var updateEnable = {\n        \"$set\": {\n            \"KMS868.kms_enabled\": msg.payload.enabled\n        }\n    };\n\n    msg.payload = [queryEnable, updateEnable, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 420,
+        "wires": [
+            [
+                "26d358dfdef6a9c7"
+            ],
+            [
+                "1d66396b7bd1131a"
+            ]
+        ],
+        "outputLabels": [
+            "MongoDB (Write)",
+            "Reload Flow"
+        ]
+    },
+    {
+        "id": "84b76976f1d09962",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "Process ESP Actions",
+        "func": "// SÉCURISATION PRÉALABLE CONTRE LES PAQUETS VIDES OU MAL FORMÉS\nif (!msg || !msg.topic) return null;\n\n// =========================================================================\n// 1. CAS RELOAD_ESP32 : LE SIGNAL COURT-CIRCUITE LA BASE ET SORT SUR LA SORTIE 2\n// =========================================================================\nif (msg.topic === \"reload_esp32\") {\n    var msgDirectRefresh = { \"topic\": \"load_esp32s_list\", \"payload\": {} };\n    return [null, msgDirectRefresh];\n}\n\n// =========================================================================\n// 2. CAS SAVE_ESP32 : ROUTAGE UNIQUE UNIFIÉ ET ADAPTATION CHIRURGICALE\n// =========================================================================\nif (msg.topic === \"save_esp32\") {\n    var data = msg.payload || {};\n    var queryEsp = {};\n    var saveEsp = {};\n\n    // centralisation et factorisation des champs pour eviter la duplication de code\n    var espObj = {\n        \"device\": data.device || \"\",\n        \"number_input\": data.number_input || \"0\",\n        \"number_output\": data.number_output || \"0\",\n        \"number_rfid\": data.number_rfid || \"0\"\n    };\n\n    // si le module esp32 est nouveau (injection de l'id msg._msgid via push)\n    if (data._id === \"new\") {\n        queryEsp = { \"_id\": \"init\" };\n        saveEsp = {\n            \"$push\": {\n                \"ESP32.devices\": Object.assign({ \"_id\": msg._msgid }, espObj)\n            }\n        };\n    }\n    // si le module esp32 existe deja (filtrage de l'id et mise a jour globale via set positionnel)\n    else {\n        queryEsp = {\n            \"_id\": \"init\",\n            \"ESP32.devices._id\": data._id\n        };\n        saveEsp = {\n            \"$set\": {\n                \"ESP32.devices.$\": Object.assign({ \"_id\": data._id }, espObj)\n            }\n        };\n    }\n\n    // formatage strict [query, update, options] pour le driver mongodb4\n    msg.payload = [queryEsp, saveEsp, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\n// =========================================================================\n// 3. CAS DELETE_ESP32 : PURGE DE LA RAM ET SUPPRESSION EN BASE DE DONNÉES\n// =========================================================================\nif (msg.topic === \"delete_esp32\") {\n    // sécurité matérielle : purge nette de la variable globale en ram avant la suppression\n    if (msg.payload && msg.payload.device) {\n        global.set(\"Memory.ESP32.\" + msg.payload.device, undefined);\n    }\n\n    var queryDel = { \"_id\": \"init\" };\n    var updateDel = {\n        \"$pull\": {\n            \"ESP32.devices\": {\n                \"_id\": msg.payload._id\n            }\n        }\n    };\n\n    msg.payload = [queryDel, updateDel, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\n// =========================================================================\n// 4. CAS ENABLED_ESP_CONFIG : ACTIVATION CHIRURGICALE DU COMMUTATEUR GENERAL\n// =========================================================================\nif (msg.topic === \"enabled_esp_config\") {\n    var queryEnable = { \"_id\": \"init\" };\n    var updateEnable = {\n        \"$set\": {\n            \"ESP32.esp_enabled\": msg.payload.enabled\n        }\n    };\n\n    msg.payload = [queryEnable, updateEnable, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 600,
+        "wires": [
+            [
+                "ce30813ed62d38c2"
+            ],
+            [
+                "9fec1ffe15dc769c"
+            ]
+        ],
+        "outputLabels": [
+            "MongoDB (Write)",
+            "Reload Flow"
+        ]
+    },
+    {
+        "id": "ce30813ed62d38c2",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update ESP Database",
+        "x": 1020,
+        "y": 580,
+        "wires": [
+            [
+                "9fec1ffe15dc769c"
+            ]
+        ]
+    },
+    {
+        "id": "9fec1ffe15dc769c",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "2397660807b5116c",
+        "name": "ESP Valid Action",
+        "mode": "link",
+        "links": [
+            "7b1bd4699a9aa4c2"
+        ],
+        "x": 1145,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "893a599c7c2d2079",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "name": "Get Keypad Infos",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR L'AFFICHAGE DE L'IHM KEYPAD\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRARE UNIQUEMENT L'OBJET KEYPAD À LA RACINE DU MESSAGE\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$KEYPAD\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_keypad_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 700,
+        "wires": [
+            [
+                "74bea47d82f207ec"
+            ]
+        ]
+    },
+    {
+        "id": "74bea47d82f207ec",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Find Keypad",
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "7f076366969e9cc5"
+            ]
+        ]
+    },
+    {
+        "id": "92d2ab44512f24ee",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "name": "Config Keypad On Load",
+        "links": [
+            "4dc8c4eea519145c",
+            "dbf8398818aa83c1"
+        ],
+        "x": 135,
+        "y": 700,
+        "wires": [
+            [
+                "74263c814f82d774"
+            ]
+        ]
+    },
+    {
+        "id": "74263c814f82d774",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 700,
+        "wires": [
+            [
+                "893a599c7c2d2079"
+            ]
+        ]
+    },
+    {
+        "id": "7f076366969e9cc5",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "tab": "bd2804380b97fc8c",
+        "name": "Keypad",
+        "order": 2,
+        "width": 12,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center; margin-bottom: 10px;\">Keypad</h3>\n\n<!-- ALIGNEMENT FLEXBOX ET STRUCTURE PILULE ÉPURÉE DE SES STYLES EN LIGNE -->\n<div\n    style=\"display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 15px; margin-bottom: 20px;\">    <span style=\"font-size: 1rem; font-weight: bold; text-decoration: underline;\">ACTIVER</span>\n\n    <!-- ANCHOR : UTILISATION DU COMPOSANT AVEC SA CLASSE LOCALE ET SES PROPRIÉTÉS BOOTSTRAP -->\n    <div id=\"keypad_pill_bg\" onclick=\"toggleKeypadPill()\" class=\"btn btn-dark switch\">\n        <!-- PASTILLE INTERNE SANS STYLE EN LIGNE -->\n        <div id=\"keypad_pill_circle\" class=\"switchcircle\"></div>\n    </div>\n</div>\n\n<script>\n    // =========================================================================\n// 1. RECEPTION : LECTURE EN VANILLA JS PUR DEPUIS MONGODB4\n// =========================================================================\n    var isKeypadEnabled = false;\n\n    $node.on(\"update-value\", function(evt, data) {\n        if (data && data.msg && data.msg.topic === \"load_keypad_list\") {\n            var payload = (data.msg && Array.isArray(data.msg.payload)) ? data.msg.payload : null;\n            if (!payload || payload.length === 0) return;\n\n            var doc = payload[0] || {};\n            isKeypadEnabled = !!doc.Keypad_Enabled;\n            \n            refreshKeypadPillVisual();\n        }\n    });\n\n// =========================================================================\n// 2. TRANSMISSION : GESTION DYNAMIQUE DU CLIC ET ENVOI SANS JQUERY\n// =========================================================================\n    function toggleKeypadPill() {\n        isKeypadEnabled = !isKeypadEnabled;\n        refreshKeypadPillVisual();\n\n        var msg = {\n            \"topic\": \"enabled_keypad_config\",\n            \"payload\": {\n                \"enabled\": isKeypadEnabled\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    function refreshKeypadPillVisual() {\n        var bg = document.querySelector('#keypad_pill_bg');\n        var circle = document.querySelector('#keypad_pill_circle');\n        \n        if (!bg || !circle) return;\n\n        if (isKeypadEnabled) {\n            bg.classList.remove('btn-dark');\n            bg.classList.add('btn-danger');\n            circle.style.transform = \"translateX(22px)\";\n        } else {\n            bg.classList.remove('btn-danger');\n            bg.classList.add('btn-dark');\n            circle.style.transform = \"translateX(0px)\";\n        }\n    }\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "39950a16e328db1c"
+            ]
+        ]
+    },
+    {
+        "id": "39950a16e328db1c",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "name": "Process Keypad Actions",
+        "func": "// SÉCURISATION PRÉALABLE CONTRE LES PAQUETS VIDES OU MAL FORMÉS\nif (!msg || !msg.topic) return null;\n\n// =========================================================================\n// 1. CAS ENABLED_KEYPAD_CONFIG : ENREGISTREMENT ET VERROUILLAGE RAM PERSISTANTE\n// =========================================================================\nif (msg.topic === \"enabled_keypad_config\") {\n    // REPRISE STRICTE DE VOTRE MISE À JOUR DE VARIABLE GLOBALE MEMORY\n    global.set(\"Memory.Keypad.keypad_enabled\", msg.payload.enabled);\n\n    var query = { \"_id\": \"init\" };\n    var updateDoc = {\n        \"$set\": {\n            \"KEYPAD.Keypad_Enabled\": msg.payload.enabled\n        }\n    };\n    \n    msg.payload = [query, updateDoc, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 740,
+        "wires": [
+            [
+                "015a5200ca7d74c0"
+            ],
+            [
+                "dbf8398818aa83c1"
+            ]
+        ],
+        "outputLabels": [
+            "MongoDB (Write)",
+            "Reload Flow"
+        ]
+    },
+    {
+        "id": "015a5200ca7d74c0",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update Keypad Database",
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "dbf8398818aa83c1"
+            ]
+        ]
+    },
+    {
+        "id": "dbf8398818aa83c1",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "3d25b90416e21b3e",
+        "name": "Keypad Valid Action",
+        "mode": "link",
+        "links": [
+            "92d2ab44512f24ee"
+        ],
+        "x": 1145,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "14f63ea806cf97f1",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "c3c0f61d3bec7e19",
+        "tab": "ff49800a9359b74c",
+        "name": "KMS868",
+        "order": 4,
+        "width": 12,
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML ET FORMULAIRE DES MODULES KMS868\n// =========================================================================\n-->\n<h3 style=\"text-align:center;\">Liste des modules KMS</h3>\n\n<div style=\"display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 15px; margin-bottom: 20px;\">\n    <span style=\"font-size: 1rem; font-weight: bold; text-decoration: underline;\">ACTIVER</span>\n\n    <!-- ANCHOR : STRUCTURE DE BOÎTES DE VOTRE V3 DU KEYPAD POUR LE COMMUTATEUR GÉNÉRAL KMS -->\n    <div id=\"kms_enabled_bg\" onclick=\"toggleKmsEnabledPill()\" class=\"btn btn-dark switch\"\n        id=\"global_kms_switch_wrapper\">\n        <div id=\"kms_enabled_circle\" class=\"switchcircle\"></div>\n    </div>\n</div>\n\n<table id=\"kms868s_list\" class=\"table-striped table-sm\">\n    <thead>\n        <tr class=\"table-dark\">\n            <th class=\"center\" style=\"width:5%\">#</th>\n            <th class=\"center\" style=\"width:40%\">Nom du module</th>\n            <th class=\"center\" style=\"width:35%\">Identifiant du module</th>\n            <th class=\"center\" style=\"width:20%\">Actions</th>\n        </tr>\n    </thead>\n    <tbody>\n        <!-- l'injection dynamique des tr s'effectue exclusivement dans ce corps étanche -->\n    </tbody>\n</table>\n\n<!-- MODALE SYSTEME -->\n<div id=\"kms868s_list_modal\" class=\"modal\">\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h2 id=\"kms868s_list_modal_title\" style=\"margin: auto;\"></h2>\n        </div>\n        <div class=\"modal-body\">\n            <p id=\"kms868s_list_modal_info\"></p>\n            <p id=\"kms868s_list_modal_question\">Voulez-vous continuer ?</p>\n        </div>\n        <div class=\"modal-footer\" id=\"kms_modal_buttons_container\">\n            <div class=\"d-grid gap-2 col-12 mx-auto\">\n                <button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"kms868sListModalValidate()\">Valider</button>\n                <button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"kms868sListModalCancelled()\">Annuler</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n    // =========================================================================\n// 2. RECEPTION : EXTRACTION VANILLA JS ET RENDU DYNAMIQUE DES LIGNES\n// =========================================================================\n    // VARIABLES GLOBALES\n    var messageKms868s;\n    var kms868s_list_modal = document.querySelector('#kms868s_list_modal');\n    \n    // REGISTRES BOOLÉENS SÉCURISÉS POUR SIMULER LES INPUTS EN JAVASCRIPT PUR\n    var isKmsGlobalEnabled = false;\n    var isKmsGlobalLocked = false;\n\n    $node.on(\"update-value\", function(evt, data) {\n        if (data && data.msg && data.msg.topic === \"load_kms868s_list\") {\n            // extraction du premier élément du tableau de résultats (logique replaceroot validée)\n            var payload = (data.msg && Array.isArray(data.msg.payload)) ? data.msg.payload[0] : null;\n            if (!payload) return;\n\n            var tbody = document.querySelector('#kms868s_list tbody');\n            if (tbody) tbody.innerHTML = ''; // PURGE INSTANTANÉE EN UNE LIGNE DU CORPS UNIQUEMENT SANS APPEL DE FONCTION EXTERNE MORT\n            \n            isKmsGlobalEnabled = !!payload.kms_enabled;\n            refreshKmsGlobalVisual();\n\n            var dat = payload.devices || [];\n            var index = 0;\n            var isAnyKmsInUse = false;\n\n            // chargement de la boucle dynamique des cartes enregistrées\n            if (tbody) {\n                dat.forEach(function(obj) {\n                    if (!obj) return;\n                    index++;\n                    if (obj.inuse) {\n                        isAnyKmsInUse = true;\n                    }\n\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('id', obj._id);\n                    \n                    // sécurité matérielle : blocage de la suppression s'il est associé à un mécanisme\n                    var dataInUseAttr = obj.inuse ? 'data-inuse=\"true\"' : 'data-inuse=\"false\"';\n                    var titleAlert = obj.inuse ? 'title=\"Ce module est associé à un mécanisme actif et ne peut pas être supprimé\"' : '';\n\n                    tr.innerHTML =\n                        '<td name=\"number\" class=\"center\">' + index + '</td>' +\n                        '<td class=\"center\"><input name=\"name\" class=\"fullDiv center\" value=\"' + (obj.name || '') + '\" autocomplete=\"off\" placeholder=\"Nom du module\"></input></td>' +\n                        '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" value=\"' + (obj.device || '') + '\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n                        '<td class=\"center\">' +\n                        '<div class=\"d-flex justify-content-center gap-1\">' +\n                        '<button class=\"btn btn-dark\" onclick=\"saveKms868(this, \\'' + obj._id + '\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                        '<button class=\"btn btn-danger\" ' + titleAlert + ' ' + dataInUseAttr + ' onclick=\"deleteKms868(\\'' + obj._id + '\\', this)\"><i class=\"nav-hdr-btn ti-trash fa-lg\"></i></button>' +\n                        '</div>' +\n                        '</td>';\n                    tbody.appendChild(tr);\n                });\n            }\n\n            // application de la sécurité sur le bouton général d'activation\n            var wrapper = document.querySelector('#global_kms_switch_wrapper');\n            var globalBg = document.querySelector('#kms_enabled_bg');\n            \n            if (isAnyKmsInUse) {\n                isKmsGlobalLocked = true;\n                if (globalBg) globalBg.classList.add('pe-none', 'opacity-50');\n                if (wrapper) wrapper.setAttribute('title', 'Modification impossible : un ou plusieurs modules KMS sont requis par le scénario matériel');\n            } else {\n                isKmsGlobalLocked = false;\n                if (globalBg) globalBg.classList.remove('pe-none', 'opacity-50');\n                if (wrapper) wrapper.removeAttribute('title');\n            }\n            // CRÉATION DE LA LIGNE D'AJOUT EN BAS DU TABLEAU AVEC APPEL DE SAUVEGARDE UNIFIÉ\n            var trNew = document.createElement('tr');\n            trNew.setAttribute('id', \"newAction\");\n            trNew.innerHTML =\n                '<td name=\"number\" class=\"center\">' + (index + 1) + '</td>' +\n                '<td class=\"center\"><input name=\"name\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nom du module\"></input></td>' +\n                '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Identifiant du module\"></input></td>' +\n                '<td class=\"center\">' +\n                '<div class=\"d-flex justify-content-center gap-1\">' +\n                '<button class=\"btn btn-dark\" onclick=\"saveKms868(this, \\'new\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                '<button class=\"btn btn-warning\" onclick=\"cancelAddKms868()\"><i class=\"nav-hdr-btn ti-reload fa-lg\"></i></button>' +\n                '</div>' +\n                '</td>';\n            if (tbody) tbody.appendChild(trNew);\n        }\n    });\n\n    // FONCTION DE RAFRAÎCHISSEMENT VISUEL EXCLUSIVE DU COMMUTATEUR GÉNÉRAL KMS V3\n    function refreshKmsGlobalVisual() {\n        var bg = document.querySelector('#kms_enabled_bg');\n        var circle = document.querySelector('#kms_enabled_circle');\n        if (!bg || !circle) return;\n\n        if (isKmsGlobalEnabled) {\n            bg.classList.remove('btn-dark');\n            bg.classList.add('btn-danger');\n            circle.style.transform = \"translateX(22px)\";\n        } else {\n            bg.classList.remove('btn-danger');\n            bg.classList.add('btn-dark');\n            circle.style.transform = \"translateX(0px)\";\n        }\n    }\n\n// =========================================================================\n// 3. ACTIONS : TRANSMISSION DES COMMANDES ET MODALES AU SERVEUR NODE-RED\n// =========================================================================\n    // interception de l'action de clic sur le commutateur général kms simulé\n    function toggleKmsEnabledPill() {\n        if (isKmsGlobalLocked) return;\n\n        isKmsGlobalEnabled = !isKmsGlobalEnabled;\n        refreshKmsGlobalVisual();\n\n        var msg = {\n            \"topic\": \"enabled_kms_config\",\n            \"payload\": {\n                \"enabled\": isKmsGlobalEnabled\n            }\n        };\n        $node.trigger('send', msg);\n    } \n\n    // function unique d'ajout et d'edition ultra-reduite via chainage optionnel ?.\n    function saveKms868(element, id) {\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        var msg = {\n            \"topic\": \"save_kms868\",\n            \"payload\": {\n                \"_id\": id,\n                \"name\": row.querySelector('[name=\"name\"]')?.value || \"\",\n                \"device\": row.querySelector('[name=\"device\"]')?.value || \"\"\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    function deleteKms868(id, element) {\n        var modalTitle = document.querySelector('#kms868s_list_modal_title');\n        var modalInfo = document.querySelector('#kms868s_list_modal_info');\n        var modalQuestion = document.querySelector('#kms868s_list_modal_question');\n        var buttonsContainer = document.querySelector('#kms_modal_buttons_container');\n        \n        if (kms868s_list_modal) {\n            kms868s_list_modal.style.display = \"block\";\n        }\n\n        var row = element.closest(\"tr\");\n        var deviceMac = row?.querySelector('[name=\"device\"]')?.value || \"\";\n\n        // récupération en direct de l'attribut inuse poussé par le bouton\n        var isInUse = element.getAttribute('data-inuse') === \"true\";\n\n        if (isInUse) {\n            // cas sécurité matérielle : modale d'alerte pure sans bouton valider\n            if (modalTitle) modalTitle.innerHTML = \"ACTION IMPOSSIBLE\";\n            if (modalInfo) modalInfo.innerHTML = \"Suppression impossible : ce module est relié a des mecanismes actifs.\";\n            if (modalQuestion) modalQuestion.style.display = \"none\";\n            \n            // on masque tout le bloc de validation et on met un bouton de fermeture unique centré\n            if (buttonsContainer) {\n                buttonsContainer.innerHTML = '<div class=\"d-grid gap-2 col-12 mx-auto\"><button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"kms868sListModalCancelled()\">Fermer</button></div>';\n            }\n            messageKms868s = null;\n        } else {\n            // cas standard : entièrement conforme à votre logique et visuel d'origine\n            if (modalTitle) modalTitle.innerHTML = \"MISE EN GARDE\";\n            if (modalInfo) modalInfo.innerHTML = \"Cette action est irréversible. Le KMS sera définitivement supprimé...\";\n            if (modalQuestion) modalQuestion.style.display = \"block\";\n            \n            // on réinjecte vos deux boutons d'origine avec votre grille bootstrap explicite\n            if (buttonsContainer) {\n                buttonsContainer.innerHTML = \n                    '<div class=\"d-grid gap-2 col-12 mx-auto\">' +\n                        '<button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"kms868sListModalValidate()\">Valider</button>' +\n                        '<button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"kms868sListModalCancelled()\">Annuler</button>' +\n                    '</div>';\n            }\n            \n            messageKms868s = {\n                \"topic\": \"delete_kms868\",\n                \"payload\": {\n                    \"_id\" : id,\n                    \"device\": deviceMac\n                }\n            };\n        }\n    }\n\n    function cancelAddKms868() {\n        $node.trigger('send', { \"topic\": \"reload_kms868\", \"payload\": {} });\n    }\n        \n    function kms868sListModalValidate() {\n        if (messageKms868s && kms868s_list_modal) {\n            $node.trigger('send', messageKms868s);\n            kms868s_list_modal.style.display = \"none\";\n        }\n    }\n\n    function kms868sListModalCancelled() {\n        if (kms868s_list_modal) {\n            kms868s_list_modal.style.display = \"none\";\n        }\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "da7e418985799f63"
+            ]
+        ]
+    },
+    {
+        "id": "733b4e6d4f1b157f",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 840,
+        "wires": [
+            [
+                "0edce9e31a3ca4dd"
+            ]
+        ]
+    },
+    {
+        "id": "0edce9e31a3ca4dd",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "name": "Get Speakers Infos",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR L'AFFICHAGE DE L'IHM SPEAKERS\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRAIRE UNIQUEMENT L'OBJET SPEAKERS À LA RACINE DU MESSAGE\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$SPEAKERS\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_speakers_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 840,
+        "wires": [
+            [
+                "9dc8ea6f06178d29"
+            ]
+        ]
+    },
+    {
+        "id": "9dc8ea6f06178d29",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Find Speakers",
+        "x": 620,
+        "y": 840,
+        "wires": [
+            [
+                "fe84659ee15cc324"
+            ]
+        ]
+    },
+    {
+        "id": "fe84659ee15cc324",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "tab": "888073779852b48c",
+        "name": "Speakers",
+        "order": 2,
+        "width": 12,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center;\">Enceintes</h3>\n\n<div style=\"display: block; text-align: center;\">\n    <label for=\"number_of_speakers\" style=\"font-size : 1rem; font-weight: bold; text-decoration: underline; margin-right: 10%;\">Nombre d'enceintes</label>\n    <input type=\"number\" id=\"number_of_speakers\" onchange=\"numberOfSpeakers(this)\">\n</div>\n\n<script>\n// =========================================================================\n// 1. RECEPTION : LECTURE EN VANILLA JS PUR DEPUIS MONGODB4\n// =========================================================================\n    $node.on(\"update-value\", function(evt, data) {\n        if (data && data.msg && data.msg.topic === \"load_speakers_list\") {\n            var payload = (data.msg && Array.isArray(data.msg.payload)) ? data.msg.payload : null;\n            if (!payload || payload.length === 0) return;\n\n            var doc = payload[0] || {};\n            var targetInput = document.querySelector('#number_of_speakers');\n            \n            if (targetInput && doc.NumberOfSpeakers !== undefined) {\n                targetInput.value = doc.NumberOfSpeakers;\n            }\n        }\n    });\n\n// =========================================================================\n// 2. TRANSMISSION : GESTION DYNAMIQUE DU CHANGEMENT ET ENVOI SANS JQUERY\n// =========================================================================\n    function numberOfSpeakers(number) {\n        var msg = {\n            \"topic\": \"change_speakers_count\",\n            \"payload\": {\n                \"number_of_speakers\": +number.value\n            }\n        };\n        $node.trigger('send', msg);\n    }\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 400,
+        "y": 880,
+        "wires": [
+            [
+                "dc48fef16ccf8fe7"
+            ]
+        ]
+    },
+    {
+        "id": "dc48fef16ccf8fe7",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "name": "Process Speakers Actions",
+        "func": "// SECURISATION PRÉALABLE CONTRE LES PAQUETS VIDES OU MAL FORMÉS\nif (!msg || !msg.topic) return null;\n\n// =========================================================================\n// 1. CAS CHANGE_SPEAKERS_COUNT : ENREGISTREMENT ET VERROUILLAGE RAM PERSISTANTE\n// =========================================================================\nif (msg.topic === \"change_speakers_count\") {\n    // REPRISE STRICTE DE LA MISE À JOUR DE VARIABLE GLOBALE MEMORY\n    global.set(\"Memory.Speaker.number_of_speakers\", msg.payload.number_of_speakers);\n\n    var query = { \"_id\": \"init\" };\n    var updateDoc = {\n        \"$set\": {\n            \"SPEAKERS.NumberOfSpeakers\": +msg.payload.number_of_speakers\n        }\n    };\n    \n    msg.payload = [query, updateDoc, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 880,
+        "wires": [
+            [
+                "931212f171af5115"
+            ],
+            [
+                "56fd1bf5e7bece9f"
+            ]
+        ],
+        "outputLabels": [
+            "MongoDB (Write)",
+            "Reload Flow"
+        ]
+    },
+    {
+        "id": "931212f171af5115",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update Speakers Database",
+        "x": 1000,
+        "y": 860,
+        "wires": [
+            [
+                "56fd1bf5e7bece9f"
+            ]
+        ]
+    },
+    {
+        "id": "56fd1bf5e7bece9f",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "name": "Speakers Valid Action",
+        "mode": "link",
+        "links": [
+            "38a0af61b4653ab7"
+        ],
+        "x": 1145,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "38a0af61b4653ab7",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "da306352f9ea41df",
+        "name": "Config Speakers On Load",
+        "links": [
+            "4dc8c4eea519145c",
+            "56fd1bf5e7bece9f"
+        ],
+        "x": 135,
+        "y": 840,
+        "wires": [
+            [
+                "733b4e6d4f1b157f"
+            ]
+        ]
+    },
+    {
+        "id": "a1c09c1b87ce3a1d",
+        "type": "link in",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "name": "Config Screens On Load",
+        "links": [
+            "4dc8c4eea519145c",
+            "431c3b74afc623a2"
+        ],
+        "x": 135,
+        "y": 980,
+        "wires": [
+            [
+                "94f1f2a0f2b86d02"
+            ]
+        ]
+    },
+    {
+        "id": "94f1f2a0f2b86d02",
+        "type": "delay",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "name": "50ms",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 980,
+        "wires": [
+            [
+                "4526fbf8e112c46d"
+            ]
+        ]
+    },
+    {
+        "id": "4526fbf8e112c46d",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "name": "Get Screens List",
+        "func": "// =========================================================================\n// 1. REQUETE : PIPELINE D'AGRÉGATION OPTIMISÉ POUR L'AFFICHAGE DE L'IHM SCREENS\n// =========================================================================\nvar pipeline = [\n    // ÉTAPE A : TROUVER LE DOCUMENT PAR SON ID UNIQUE 'INIT'\n    { \"$match\": { \"_id\": \"init\" } },\n\n    // ÉTAPE B : EXTRAIRE UNIQUEMENT L'OBJET SCREENS À LA RACINE DU DOCUMENT\n    {\n        \"$replaceRoot\": {\n            \"newRoot\": { \"$ifNull\": [\"$SCREENS\", {}] }\n        }\n    }\n];\n\nvar options = {};\n\n// =========================================================================\n// 2. ENCAPSULATION ET PARAMÉTRAGE POUR LE DRIVER MONGODB4 V3.4.0\n// =========================================================================\nmsg.payload = [pipeline, options];\nmsg.operation = \"aggregate\";\nmsg.topic = \"load_screens_list\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 980,
+        "wires": [
+            [
+                "e7bd391d4d101058"
+            ]
+        ]
+    },
+    {
+        "id": "e7bd391d4d101058",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Find All Screens",
+        "x": 620,
+        "y": 980,
+        "wires": [
+            [
+                "259f9070017954ff"
+            ]
+        ]
+    },
+    {
+        "id": "259f9070017954ff",
+        "type": "ur_template",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "tab": "3abd2921f32fa1a4",
+        "name": "Screens List Table",
+        "order": 4,
+        "width": 12,
+        "height": 0,
+        "format": "<!--\n// =========================================================================\n// 1. VISUEL : STRUCTURE HTML ET TABLEAU DE CONFIGURATION DE LA LISTE DES ECRANS\n// =========================================================================\n-->\n<h3 style=\"text-align:center;\">Liste des Ecrans</h3>\n\n<table id=\"screens_list\" class=\"table-striped table-sm\">\n    <thead>\n        <tr class=\"table-dark\">\n            <th class=\"center\" style=\"width:5%\">#</th>\n            <th class=\"center\" style=\"width:25%\">Nom</th>\n            <th class=\"center\" style=\"width:25%\">Identifiant</th>\n            <th class=\"center\" style=\"width:25%\">#Ecran</th>\n            <th class=\"center\" style=\"width:20%\">Actions</th>\n        </tr>\n    </thead>\n    <tbody>\n        <!-- l'injection dynamique des tr s'effectue exclusivement dans ce corps étanche -->\n    </tbody>\n</table>\n\n<!-- MODAL DE CONFIRMATION DE SUPPRESSION DE LA CHARTE VISUELLE -->\n<div id=\"screens_list_modal\" class=\"modal\">\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h2 id=\"screens_list_modal_title\" style=\"margin: auto;\"></h2>\n        </div>\n        <div class=\"modal-body\">\n            <p id=\"screens_list_modal_info\"></p>\n            <p>Voulez-vous continuer ?</p>\n        </div>\n        <div class=\"modal-footer\">\n            <div class=\"d-grid gap-2 col-12 mx-auto\">\n                <button type=\"button\" class=\"btn btn-danger btn-lg\" onclick=\"screensListModalValidate()\">Valider</button>\n                <button type=\"button\" class=\"btn btn-secondary btn-lg\" onclick=\"screensListModalCancelled()\">Annuler</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n// =========================================================================\n// 2. RECEPTION : EXTRACTION VANILLA JS ET RENDU DES DONNEES DE LA BASE\n// =========================================================================\n    // REGISTRES ET VARIABLES GLOBALES DU MODULE DES ECRANS\n    var messageScreens;\n    var screens_list_modal = document.querySelector('#screens_list_modal');\n\n    $node.on(\"update-value\", function(evt, data) {\n        var tbody = document.querySelector('#screens_list tbody');\n        if (tbody) tbody.innerHTML = ''; // PURGE INSTANTANÉE EN UNE LIGNE DU CORPS UNIQUEMENT SANS APPEL DE FONCTION EXTERNE MORT\n        \n        var index = 0;\n        \n        // étanchéité de l'affichage : vérification stricte du topic de chargement\n        if (data && data.msg && data.msg.topic === \"load_screens_list\" && tbody) {\n            var payload = (data.msg && Array.isArray(data.msg.payload)) ? data.msg.payload : null;\n            if (!payload || payload.length === 0) return;\n\n            // extraction étanche de l'index 0 de l'agrégation mongodb et lecture directe des devices\n            var doc = payload[0] || {};\n            var dat = doc.devices || [];\n            \n            dat.forEach(function(obj) {\n                if (!obj) return;\n                if (obj.device_name !== \"Non visible\") {\n                    index++;\n                    var tr = document.createElement('tr');\n                    tr.setAttribute('id', obj._id); \n\n                    // anchor : utilisation de ta classe fulldiv center sur tes selecteurs de table\n                    tr.innerHTML =\n                        '<td name=\"number\" class=\"center\">' + index + '</td>' +\n                        '<td class=\"center\"><input name=\"device_name\" class=\"fullDiv center\" value=\"' + (obj.device_name || '') + '\" autocomplete=\"off\" placeholder=\"Nom\"></input></td>' +\n                        '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" value=\"' + (obj.device || '') + '\" autocomplete=\"off\" placeholder=\"Identifiant\"></input></td>' +\n                        '<td class=\"center\">' +\n                            '<select name=\"screen\" class=\"fullDiv center\">' +\n                                '<option value=\"Choisir...\" disabled>Choisir...</option>' +\n                                '<option value=\"screen_1\">Ecran 1</option>' +\n                                '<option value=\"screen_2\">Ecran 2</option>' +\n                            '</select>' +\n                        '</td>' +\n                        '<td class=\"center\">' +\n                        '<div class=\"d-flex justify-content-center gap-1\">' +\n                        '<button class=\"btn btn-dark\" onclick=\"saveScreen(this, \\'' + obj._id + '\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                        '<button class=\"btn btn-danger\" onclick=\"deleteScreen(this, \\'' + obj._id + '\\')\"><i class=\"nav-hdr-btn ti-trash fa-lg\"></i></button>' +\n                        '</div>' +\n                        '</td>';\n                    tbody.appendChild(tr);\n\n                    // affectation de la valeur du select sans jquery via la protection native || {}\n                    (tr.querySelector('[name=\"screen\"]') || {}).value = obj.screen || \"Choisir...\";\n                }\n            });\n            \n            // anchor : création de la ligne d'ajout en bas du tableau (bouton dark pour save, warning pour reload)\n            var trNew = document.createElement('tr');\n            trNew.setAttribute('id', \"newAction\"); \n            trNew.innerHTML =\n                '<td name=\"number\" class=\"center\">' + (index + 1) + '</td>' +\n                '<td class=\"center\"><input name=\"device_name\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Nom\"></input></td>' +\n                '<td class=\"center\"><input name=\"device\" class=\"fullDiv center\" autocomplete=\"off\" placeholder=\"Identifiant\"></input></td>' +\n                '<td class=\"center\">' +\n                    '<select name=\"screen\" class=\"fullDiv center\">' +\n                        '<option value=\"Choisir...\" selected disabled>Choisir...</option>' +\n                        '<option value=\"screen_1\">Ecran 1</option>' +\n                        '<option value=\"screen_2\">Ecran 2</option>' +\n                    '</select>' +\n                '</td>' +\n                '<td class=\"center\">' +\n                '<div class=\"d-flex justify-content-center gap-1\">' +\n                '<button class=\"btn btn-dark\" onclick=\"saveScreen(this, \\'new\\')\"><i class=\"nav-hdr-btn ti-save fa-lg\"></i></button>' +\n                '<button class=\"btn btn-warning\" onclick=\"cancelAddScreen()\"><i class=\"nav-hdr-btn ti-reload fa-lg\"></i></button>' +\n                '</div>' +\n                '</td>';\n            tbody.appendChild(trNew);\n        }\n    });\n// =========================================================================\n// 3. TRANSMISSION : GESTION DYNAMIQUE DES ACTIONS ET ENVOI SANS JQUERY\n// =========================================================================\n    // function unique d'ajout et d'edition ultra-reduite via chainage optionnel ?.\n    function saveScreen(element, id) {\n        var row = element.closest(\"tr\");\n        if (!row) return;\n\n        var screenValue = row.querySelector('[name=\"screen\"]')?.value || \"screen_1\";\n        if (screenValue === \"Choisir...\" || !screenValue) {\n            screenValue = \"screen_1\";\n        }\n\n        var msg = {\n            \"topic\": \"save_screen\",\n            \"payload\": {\n                \"_id\": id,\n                \"device_name\": row.querySelector('[name=\"device_name\"]')?.value || \"\",\n                \"device\": row.querySelector('[name=\"device\"]')?.value || \"\",\n                \"screen\": screenValue\n            }\n        };\n        $node.trigger('send', msg);\n    }\n\n    function cancelAddScreen() {\n        $node.trigger('send', { \"topic\": \"reload_screen\", \"payload\": {} });\n    }\n\n    function deleteScreen(element, id) {\n        var row = element.closest(\"tr\"); \n        if (!row) return;\n\n        if (screens_list_modal) {\n            screens_list_modal.style.display = \"block\";\n        }\n        \n        document.querySelector('#screens_list_modal_title').innerHTML = \"MISE EN GARDE\";\n        document.querySelector('#screens_list_modal_info').innerHTML = \"Cette action est irréversible. L'écran sera définitivement supprimé...\";\n        \n        messageScreens = {\n            \"topic\": \"delete_screen\",\n            \"payload\": {\n                \"_id\": id,\n                \"device\": row.querySelector('[name=\"device\"]')?.value || \"\"\n            }\n        };\n    }\n    \n    function screensListModalValidate() {\n        if (messageScreens && screens_list_modal) {\n            $node.trigger('send', messageScreens);\n            screens_list_modal.style.display = \"none\";\n        }\n    }\n    \n    function screensListModalCancelled() {\n        if (screens_list_modal) {\n            screens_list_modal.style.display = \"none\";\n        }\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "topicPattern": "",
+        "access": "9",
+        "accessBehavior": "disable",
+        "x": 430,
+        "y": 1020,
+        "wires": [
+            [
+                "9025fe48a79e6e28"
+            ]
+        ]
+    },
+    {
+        "id": "9025fe48a79e6e28",
+        "type": "function",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "name": "Process Screens Actions",
+        "func": "// SÉCURISATION PRÉALABLE CONTRE LES PAQUETS VIDES OU MAL FORMÉS\nif (!msg || !msg.topic) return null;\n\n// =========================================================================\n// 1. CAS RELOAD_SCREEN : LE SIGNAL COURT-CIRCUITE LA BASE ET SORT SUR LA SORTIE 2\n// =========================================================================\nif (msg.topic === \"reload_screen\") {\n    var msgDirectRefresh = { \"topic\": \"load_screens_list\", \"payload\": {} };\n    return [null, msgDirectRefresh];\n}\n\n// =========================================================================\n// 2. CAS SAVE_SCREEN : ROUTAGE UNIQUE UNIFIÉ ET ADAPTATION CHIRURGICALE\n// =========================================================================\nif (msg.topic === \"save_screen\") {\n    var data = msg.payload || {};\n    var queryScreen = {};\n    var saveScreen = {};\n\n    // centralisation et factorisation des champs pour eviter la duplication de code\n    var screenObj = {\n        \"device_name\": data.device_name || \"\",\n        \"device\": data.device || \"\",\n        \"screen\": data.screen || \"screen_1\"\n    };\n\n    // si l'ecran est nouveau (injection de l'id msg._msgid via push)\n    if (data._id === \"new\") {\n        queryScreen = { \"_id\": \"init\" };\n        saveScreen = {\n            \"$push\": {\n                \"SCREENS.devices\": Object.assign({ \"_id\": msg._msgid }, screenObj)\n            }\n        };\n    }\n    // si l'ecran existe deja (filtrage de l'id et mise a jour globale via set positionnel)\n    else {\n        queryScreen = {\n            \"_id\": \"init\",\n            \"SCREENS.devices._id\": data._id\n        };\n        saveScreen = {\n            \"$set\": {\n                \"SCREENS.devices.$\": Object.assign({ \"_id\": data._id }, screenObj)\n            }\n        };\n    }\n\n    // formatage strict [query, update, options] pour le driver mongodb4\n    msg.payload = [queryScreen, saveScreen, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\n// =========================================================================\n// 3. CAS DELETE_SCREEN : PURGE DE LA RAM ET SUPPRESSION EN BASE DE DONNÉES\n// =========================================================================\nif (msg.topic === \"delete_screen\") {\n    // sécurité matérielle : purge nette de la variable globale avant la suppression en base\n    if (msg.payload && msg.payload.device) {\n        global.set(\"Memory.Screen.\" + msg.payload.device, undefined);\n    }\n\n    var queryDel = { \"_id\": \"init\" };\n    var updateDel = {\n        \"$pull\": {\n            \"SCREENS.devices\": {\n                \"_id\": msg.payload._id\n            }\n        }\n    };\n\n    msg.payload = [queryDel, updateDel, { \"upsert\": false }];\n    msg.operation = \"updateOne\";\n    return [msg, null];\n}\n\nreturn null;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1020,
+        "wires": [
+            [
+                "4e50b8f26bfc5e2c"
+            ],
+            [
+                "431c3b74afc623a2"
+            ]
+        ],
+        "outputLabels": [
+            "MongoDB (Write)",
+            "Reload Flow"
+        ]
+    },
+    {
+        "id": "4e50b8f26bfc5e2c",
+        "type": "mongodb4",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "clientNode": "cdb1a4edba6854d2",
+        "mode": "collection",
+        "collection": "config_automation",
+        "operation": "",
+        "maxTimeMS": "",
+        "handleDocId": false,
+        "name": "Update Screens Database",
+        "x": 1000,
+        "y": 1000,
+        "wires": [
+            [
+                "431c3b74afc623a2"
+            ]
+        ]
+    },
+    {
+        "id": "431c3b74afc623a2",
+        "type": "link out",
+        "z": "b87f87d6b87a22c5",
+        "g": "ad7a29265903af62",
+        "name": "Screens Valid Action",
+        "mode": "link",
+        "links": [
+            "a1c09c1b87ce3a1d"
+        ],
+        "x": 1145,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "757e29753346cf86",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "unified-red",
+        "name": ""
+    },
+    {
+        "id": "f3d924efde2d7c38",
+        "type": "ur_tab",
+        "name": "Addresses",
+        "order": 1,
+        "group": "15a5aa879decf622",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "a31dd3eca6dcedb7",
+        "type": "ur_tab",
+        "name": "Déclencheurs",
+        "order": 1,
+        "group": "ea96a60d1d597bd1",
+        "disabled": false,
+        "hidden": false,
+        "access": "1",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "818430c344af7410",
+        "type": "ur_tab",
+        "name": "Mécanismes",
+        "order": 2,
+        "group": "f95c9735abfdc00a",
+        "disabled": false,
+        "hidden": false,
+        "access": "",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "dc188a9f51ec7e5f",
+        "type": "ur_tab",
+        "name": "Title",
+        "order": 1,
+        "group": "b9c93855e5a64a6f",
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "cdb1a4edba6854d2",
+        "type": "mongodb4-client",
+        "name": "",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "",
+        "dbName": "unified-red",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "7d7fae418ec6ebd9",
+        "type": "ur_tab",
+        "name": "Adresses",
+        "order": 1,
+        "group": "0714dc6dd99c1e82",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "bd2804380b97fc8c",
+        "type": "ur_tab",
+        "name": "Keypad",
+        "order": 1,
+        "group": "4e2c09682f5f7760",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "ff49800a9359b74c",
+        "type": "ur_tab",
+        "name": "Addresses",
+        "order": 1,
+        "group": "38d65b0c38ddffff",
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "888073779852b48c",
+        "type": "ur_tab",
+        "name": "Speaker",
+        "order": 1,
+        "group": "6c333d79d818efe6",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "3abd2921f32fa1a4",
+        "type": "ur_tab",
+        "name": "Addresses",
+        "order": 1,
+        "group": "bd6a677ccb0ed9b8",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "15a5aa879decf622",
+        "type": "ur_group",
+        "name": "MCP23017",
+        "page": "97f1ff9eceaff397",
+        "order": 2,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": "12",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "ea96a60d1d597bd1",
+        "type": "ur_group",
+        "name": "Déclencheurs",
+        "page": "a6998c49695cc0da",
+        "order": 1,
+        "disp": false,
+        "widthLg": "6",
+        "widthMd": "6",
+        "widthSm": "12",
+        "disabled": false,
+        "hidden": false,
+        "access": "",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "f95c9735abfdc00a",
+        "type": "ur_group",
+        "name": "Mécanismes",
+        "page": "a6998c49695cc0da",
+        "order": 2,
+        "disp": false,
+        "widthLg": 6,
+        "widthMd": 6,
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": "",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "b9c93855e5a64a6f",
+        "type": "ur_group",
+        "name": "TITLE",
+        "page": "97f1ff9eceaff397",
+        "order": 1,
+        "disp": false,
+        "widthLg": "12",
+        "widthMd": "12",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "0714dc6dd99c1e82",
+        "type": "ur_group",
+        "name": "ESP32",
+        "page": "97f1ff9eceaff397",
+        "order": 4,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "4e2c09682f5f7760",
+        "type": "ur_group",
+        "name": "KEYPAD",
+        "page": "97f1ff9eceaff397",
+        "order": 5,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "38d65b0c38ddffff",
+        "type": "ur_group",
+        "name": "KMS",
+        "page": "97f1ff9eceaff397",
+        "order": 3,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": "12",
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "6c333d79d818efe6",
+        "type": "ur_group",
+        "name": "SPEAKERS",
+        "page": "97f1ff9eceaff397",
+        "order": 6,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": ""
+    },
+    {
+        "id": "bd6a677ccb0ed9b8",
+        "type": "ur_group",
+        "name": "SCREENS",
+        "page": "97f1ff9eceaff397",
+        "order": 7,
+        "disp": false,
+        "widthLg": "4",
+        "widthMd": "4",
+        "widthSm": 12,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "97f1ff9eceaff397",
+        "type": "ur_page",
+        "name": "Automates",
+        "folder": "b8ad24c00d63b306",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide",
+        "isMulti": false,
+        "isSingle": true,
+        "pageType": "single",
+        "inheritInst": false,
+        "expression": ""
+    },
+    {
+        "id": "a6998c49695cc0da",
+        "type": "ur_page",
+        "name": "Annexes",
+        "folder": "f9c66cbd362a9c04",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "disabled": false,
+        "hidden": false,
+        "access": "",
+        "accessBehavior": "hide",
+        "isMulti": false,
+        "isSingle": true,
+        "pageType": "single",
+        "inheritInst": false,
+        "expression": ""
+    },
+    {
+        "id": "b8ad24c00d63b306",
+        "type": "ur_folder",
+        "name": "MASTER INSTALL",
+        "icon": "settings",
+        "order": 4,
+        "disabled": false,
+        "hidden": false,
+        "access": "9",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "f9c66cbd362a9c04",
+        "type": "ur_folder",
+        "name": "Tableau de bord",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false,
+        "access": "1",
+        "accessBehavior": "hide"
+    },
+    {
+        "id": "5a7ed0eaafb3d870",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-mongodb": "0.2.5",
+            "unified-red": "2.7.2",
+            "node-red-contrib-mongodb4": "3.4.0"
+        }
+    }
+]
